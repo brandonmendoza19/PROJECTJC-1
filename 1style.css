@@ -20,9 +20,9 @@ body {
 
 .header {
     background-image: linear-gradient(
-        rgba(0, 0, 0, 0.7)
-        rgba(0, 0, 0, 0.7))
-        url(imagenes/bg.jpg);
+        #F0E68C,
+        #F0E68C)
+        url(images/bg.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,7 +43,7 @@ body {
 }
 
 .logo {
-    color: #FFFDFC;
+    color: #2E8B57;
     font-size: 25px;
     font-weight: 800;
 }
@@ -54,12 +54,12 @@ body {
 .menu .navbar ul li a {
     font-size: 18px;
     padding: 20px;
-    color: #FFFDFC;
+    color: #2E8B57;
     display: block;
     font-weight: 600;
 }
 .menu .navbar ul li a:hover{
-    color: #CE967B;
+    color: #FFA500;
 }
 #menu {
     display: none;
@@ -78,29 +78,29 @@ body {
 .header-content h1 {
     font-size: 75px;
     line-height: 80px;
-    color: #f9fafc;
+    color: #2E8B57;
     text-transform: uppercase;
     margin-bottom: 35px;
 }
 .header-content p {
     font-size: 16px;
-    color: #C5C5C5;
+    color: #3CB371;
     padding: 0 250px;
     margin-bottom: 25px;
 }
 .btn-1 {
     display: inline-block;
     padding: 11px 35px;
-    background-color: #CE967B;
+    background-color: #3CB371;
     color: #f9fafc;
     text-transform: uppercase;
 }
 .btn-1:hover {
-    background-color: #EBAD8D;
+    background-color: #FFA500;
 }
 .carton {
     padding: 100px;
-    background-color: #E1E2E6;
+    background-color: #F5DEB3;
     position: relative;
 }
 .carton-content {
@@ -109,14 +109,14 @@ body {
 .carton-content h2 {
     font-size: 55px;
     line-height: 70px;
-    color: #323337;
+    color: #2E8B57;
     text-transform: uppercase;
     padding: 0 250px;
     margin-bottom: 15px;
 }
 .txt-p {
     font-size: 16px;
-    color: #414247;
+    color: #000000;
     padding: 0 250px;
     margin-bottom: 35px;
 }
@@ -137,14 +137,14 @@ body {
     right: 0;
 }
 .carton-1 h3 {
-    color: #323337;
+    color: #2E8B57;
     font-size: 20px;
     margin-bottom: 15px;
 }
 .services {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.7),
-        rgba(0, 0, 0, 0.7)),
+        #7B68EE),
         url(images/11-img.jpg);
         background-position: center center;
         background-repeat: no-repeat;
@@ -158,13 +158,13 @@ body {
 .services-content h2 {
     font-size: 55px;
     line-height: 70px;
-    color: #f9fafc;
+    color: #48D1CC;
     text-transform: uppercase;
     margin-bottom: 50px;
 }
 .services-content p {
     font-size: 16px;
-    color: #C5C5C5;
+    color: #48D1CC;
     margin-bottom: 50px;
     padding: 0 100px;
 }
@@ -181,7 +181,7 @@ body {
     margin-bottom: 15px;
 }
 .services-1 h3 {
-    color: #eaccb3;
+    color: #F0E68C;
     font-size: 18px;
 }
 .general {
@@ -190,7 +190,7 @@ body {
 .general-1 {
     width: 50%;
     padding: 100px 250px 100px 100px;
-    background-color: #E1E2E6;
+    background-color: #F0E68C;
 }
 .general-2 {
     background-image: url(imagenes/coffe-1.jpg);
@@ -210,14 +210,14 @@ body {
 h2 {
     font-size: 55px;
     line-height: 70px;
-    color:#323337;
+    color: #000;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
 p {
     font-size: 16px;
-    color: #414247;
+    color: #000;
     margin: 25px 0 45px 0;
 }
 .blog {
@@ -238,7 +238,7 @@ p {
 }
 .blog-1 h3 {
     font-size: 25px;
-    color: #323337;
+    color: #2E8B57;
 }
 
 .footer {
@@ -252,13 +252,13 @@ p {
 
 link h3 {
     font-size: 18px;
-    color: #f9fafc;
+    color: #2E8B57;
     margin-bottom: 15px;
 }
 
 link a {
     font-size: 16px;
-    color: #f9fafc;
+    color: #7B68EE;
     display: block;
     margin-bottom: 15px;
 }
@@ -275,7 +275,7 @@ link a {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #323337;
+        background-color: #3CB3;
         display: none;
     }
     .menu .navbar ul li {
