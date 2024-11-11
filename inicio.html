@@ -1,27 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GeoArt V</title>
-    <link rel="stylesheet" href="inicio.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="inicio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+    rel="stylesheet"
+    />
+    <title>Registro GeoArt V</title>
 </head>
 <body>
-    <form>
-        <h1 class="title">Acceso</h1>
-        <label for="">
-            <i class="fa-regular fa-user"></i>
-            <input placeholder="username" type="text" id="username">
-        </label>
-        <label>
-            <i class="fa-solid fa-lock"></i>
-            <input placeholder="password" type="password" id="password">
-        </label>
-        <a href="#" class="link">¿Olvidaste tu contraseña?</a>
+    <div class="container">
+    <div class="header">
+        <h2>Registro</h2>
+    </div>
 
-        <button id="button">Acceso</button>
+    <form id="form" class="form">
+        <div class="form-control">
+        <label for="username">Nombre del usuário</label>
+        <input
+            type="text"
+            id="username"
+            placeholder="Digite su nombre de usuario..."
+        />
+        <i class="fas fa-exclamation-circle"></i>
+        <i class="fas fa-check-circle"></i>
+        <small>Mensaje de error</small>
+        </div>
+
+        <div class="form-control">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Digite su email.." />
+        <i class="fas fa-exclamation-circle"></i>
+        <i class="fas fa-check-circle"></i>
+        <small>Mensaje de error</small>
+        </div>
+
+        <div class="form-control">
+        <label for="password">Digite contraseña</label>
+        <input
+            type="password"
+            id="password"
+            placeholder="Digite su contraseña..."
+        />
+        <i class="fas fa-exclamation-circle"></i>
+        <i class="fas fa-check-circle"></i>
+        <small>Mensaje de error</small>
+        </div>
+
+        <div class="form-control">
+        <label for="password-confirmation">Confirmacion de contraseña</label>
+        <input
+            type="password"
+            id="password-confirmation"
+            placeholder="Digite su contraseña nuevamente..."
+        />
+        <i class="fas fa-exclamation-circle"></i>
+        <i class="fas fa-check-circle"></i>
+        <small>Mensaje de error</small>
+        </div>
+
+        <button type="submit">Enviar</button>
     </form>
-    <script src="main.js"></script>
+    </div>
+
+    <script
+    src="https://kit.fontawesome.com/f9e19193d6.js"
+    crossorigin="anonymous"
+    ></script>
+
+    <script src="inicio.js"></script>
 </body>
 </html>
