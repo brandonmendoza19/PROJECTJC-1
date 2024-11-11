@@ -1,73 +1,101 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
     min-height: 100vh;
-    background: linear-gradient(to right, #FFD700, #3CB371);
-}
-
-form {
+    background: linear-gradient(90deg, #FF1493 0%, #4B0082 100%);
     display: flex;
-    flex-direction: column;
-    background: #EEE8AA;
-    text-align: center;
-    padding: 20px 25px;
-    box-shadow: 0 5px 10px #008080;
+    justify-content: center;
+    align-items: center;
 }
 
-form .title {
-    color: #2E8B57;
-    font-size: 35px;
-    font-weight: 800;
-    margin-bottom: 30px;
+.container {
+    background-color: #DCDCDC;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
 }
 
-form label{
-    margin-bottom: 35px;
+.header {
+    background-color: #eee;
+    padding: 20px;
 }
 
-form label .fa-solid {
-    font-size: 20px;
-    color: #2E8B57;
-    margin-right: 10px;
+.form {
+    padding: 20px;
 }
 
-form label input {
-    outline: none;
-    border: none;
-    color: #228B22;
-    border-bottom: solid 1px #008080;
-    padding: 0 5px;
-    font-size: 18px;
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
 }
 
-form label input::placeholder {
-    color: #228B22;
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
 }
 
-form .link {
-    color: #2E8B57;
-    margin-bottom: 15px;
+.form-control input {
+    border: 2px solid #FF1493;
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
 }
 
-form button {
-    color: #2E8B57;
-    border: none;
-    background: linear-gradient( to right, #ADFF2F, #2E8B57);
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 20px;
+.form-control i {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    visibility: hidden;
 }
 
+.form-control small {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
 
+.form button {
+    background-color: #FF1493;
+    border: 2px solid #4B0082;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
 
+  /* Error and Success */
+.form-control.success input {
+    border-color: #4B0082;
+}
 
+.form-control.error input {
+    border-color: #FF1493;
+}
 
+.form-control.success i.fa-check-circle {
+    color: #FF1493;
+    visibility: visible;
+}
 
+.form-control.error i.fa-exclamation-circle {
+    color: #FF1493;
+    visibility: visible;
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: #FF1493;
+}
