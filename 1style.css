@@ -20,9 +20,9 @@ body {
 
 .header {
     background-image: linear-gradient(
-        #F0E68C,
-        #F0E68C)
-        url(images/bg.jpg);
+        #4B0082,
+        #FF1493),
+        url(images/img-jpg-png\ \(1\).jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,9 +99,10 @@ body {
     background-color: #FFA500;
 }
 .carton {
-    padding: 100px;
+    padding: 100px 0;
     background-color: #F5DEB3;
     position: relative;
+    background-image: center;
 }
 .carton-content {
     text-align: center;
@@ -126,7 +127,7 @@ body {
     margin-bottom: 50px;
 }
 .carton-1 {
-    padding: 0 25px;
+    padding: 0 250px;
 }
 .carton-1 img {
     width: 200px;
@@ -177,12 +178,12 @@ body {
     padding: 0 100px;
 }
 .services-1 img {
-    width: 25px;
-    margin-bottom: 15px;
+    width: 250px;
+    margin-bottom: 100px;
 }
 .services-1 h3 {
     color: #F0E68C;
-    font-size: 18px;
+    font-size: 40px;
 }
 .general {
     display: flex;
@@ -193,14 +194,14 @@ body {
     background-color: #F0E68C;
 }
 .general-2 {
-    background-image: url(imagenes/coffe-1.jpg);
+    background-image: url(images/reciclaje-1.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 50%;
 }
 .general-3 {
-    background-image: url(imagenes/coffee-2.jpg);
+    background-image: url(images/img-1-\ \(14\).jfif);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -258,7 +259,7 @@ link h3 {
 
 link a {
     font-size: 16px;
-    color: #7B68EE;
+    color: #2E8B57;
     display: block;
     margin-bottom: 15px;
 }
