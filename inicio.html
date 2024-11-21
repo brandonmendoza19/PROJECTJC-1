@@ -1,78 +1,103 @@
+<!-- Definición del documento HTML y su idioma -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <!-- Codificación de caracteres y compatibilidad con dispositivos móviles -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Enlace a la hoja de estilos CSS -->
     <link rel="stylesheet" href="inicio.css" />
+    
+    <!-- Preconexión con Google Fonts para cargar fuentes de manera eficiente -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Enlace a la fuente Poppins desde Google Fonts -->
     <link
     href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
     rel="stylesheet"
     />
+    
+    <!-- Título de la página -->
     <title>Registro GeoArt V</title>
 </head>
+
+<!-- Cuerpo del documento HTML -->
 <body>
+    <!-- Contenedor principal del formulario de registro -->
     <div class="container">
-    <div class="header">
-        <h2>Registro</h2>
+        <!-- Cabecera del formulario -->
+        <div class="header">
+            <!-- Título del formulario -->
+            <h2>Registro</h2>
+        </div>
+        
+        <!-- Formulario de registro -->
+        <form id="form" class="form">
+            <!-- Campo de control para el nombre de usuario -->
+            <div class="form-control">
+                <label for="username">Nombre del usuário</label>
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Digite su nombre de usuario..."
+                />
+                <!-- Iconos para indicar error o éxito -->
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <!-- Mensaje de error -->
+                <small>Mensaje de error</small>
+            </div>
+            
+            <!-- Campo de control para el email -->
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Digite su email.." />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensaje de error</small>
+            </div>
+            
+            <!-- Campo de control para la contraseña -->
+            <div class="form-control">
+                <label for="password">Digite contraseña</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Digite su contraseña..."
+                />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensaje de error</small>
+            </div>
+            
+            <!-- Campo de control para la confirmación de contraseña -->
+            <div class="form-control">
+                <label for="password-confirmation">Confirmacion de contraseña</label>
+                <input
+                    type="password"
+                    id="password-confirmation"
+                    placeholder="Digite su contraseña nuevamente..."
+                />
+                <i class="fas fa-exclamation-circle"></i>
+                <i class="fas fa-check-circle"></i>
+                <small>Mensaje de error</small>
+            </div>
+            
+            <!-- Botón de envío -->
+            <button type="submit">Enviar</button>
+        </form>
     </div>
-
-    <form id="form" class="form">
-        <div class="form-control">
-        <label for="username">Nombre del usuário</label>
-        <input
-            type="text"
-            id="username"
-            placeholder="Digite su nombre de usuario..."
-        />
-        <i class="fas fa-exclamation-circle"></i>
-        <i class="fas fa-check-circle"></i>
-        <small>Mensaje de error</small>
-        </div>
-
-        <div class="form-control">
-        <label for="email">Email</label>
-        <input type="text" id="email" placeholder="Digite su email.." />
-        <i class="fas fa-exclamation-circle"></i>
-        <i class="fas fa-check-circle"></i>
-        <small>Mensaje de error</small>
-        </div>
-
-        <div class="form-control">
-        <label for="password">Digite contraseña</label>
-        <input
-            type="password"
-            id="password"
-            placeholder="Digite su contraseña..."
-        />
-        <i class="fas fa-exclamation-circle"></i>
-        <i class="fas fa-check-circle"></i>
-        <small>Mensaje de error</small>
-        </div>
-
-        <div class="form-control">
-        <label for="password-confirmation">Confirmacion de contraseña</label>
-        <input
-            type="password"
-            id="password-confirmation"
-            placeholder="Digite su contraseña nuevamente..."
-        />
-        <i class="fas fa-exclamation-circle"></i>
-        <i class="fas fa-check-circle"></i>
-        <small>Mensaje de error</small>
-        </div>
-
-        <button type="submit">Enviar</button>
-    </form>
-    </div>
-
+    
+    <!-- Script para cargar Font Awesome -->
     <script
     src="https://kit.fontawesome.com/f9e19193d6.js"
     crossorigin="anonymous"
     ></script>
-
+    
+    <!-- Script para el formulario de registro -->
     <script src="inicio.js"></script>
 </body>
 </html>
