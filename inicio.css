@@ -1,101 +1,168 @@
+/* Estilos generales para todos los elementos */
 * {
+    /* Eliminar márgenes y paddings por defecto */
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
+    /* Establecer fuente por defecto */
     font-family: "Poppins", sans-serif;
 }
 
+/* Estilos para el cuerpo del documento */
 body {
+    /* Establecer ancho y alto mínimo */
     width: 100%;
     min-height: 100vh;
+    
+    /* Establecer fondo degradado */
     background: linear-gradient(90deg, #FF1493 0%, #4B0082 100%);
+    
+    /* Centrar contenido horizontal y verticalmente */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Estilos para el contenedor principal del formulario */
 .container {
+    /* Establecer color de fondo y bordes redondeados */
     background-color: #DCDCDC;
     border-radius: 10px;
+    
+    /* Agregar sombra para dar profundidad */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    
+    /* Establecer ancho máximo y mínimo */
     width: 400px;
     max-width: 100%;
+    
+    /* Ocultar contenido que sobrepase el ancho máximo */
     overflow: hidden;
 }
 
+/* Estilos para la cabecera del formulario */
 .header {
+    /* Establecer color de fondo */
     background-color: #eee;
+    
+    /* Agregar padding para separar contenido */
     padding: 20px;
 }
 
+/* Estilos para el formulario */
 .form {
+    /* Agregar padding para separar contenido */
     padding: 20px;
 }
 
+/* Estilos para los campos de control del formulario */
 .form-control {
+    /* Agregar margen inferior para separar campos */
     margin-bottom: 10px;
     padding-bottom: 20px;
+    
+    /* Establecer posición relativa para iconos y mensajes de error */
     position: relative;
 }
 
+/* Estilos para las etiquetas de los campos de control */
 .form-control label {
+    /* Mostrar etiqueta como bloque */
     display: inline-block;
+    
+    /* Agregar margen inferior para separar etiqueta del campo */
     margin-bottom: 5px;
 }
 
+/* Estilos para los campos de entrada del formulario */
 .form-control input {
+    /* Establecer bordes y color de fondo */
     border: 2px solid #FF1493;
-    display: block;
-    border-radius: 10px;
+    background-color: #fff;
+    
+    /* Establecer tamaño de fuente y padding */
     font-size: 14px;
-    width: 100%;
     padding: 10px;
+    
+    /* Ocupar todo el ancho disponible */
+    width: 100%;
+    
+    /* Establecer bordes redondeados */
+    border-radius: 10px;
 }
 
+/* Estilos para los iconos de éxito y error */
 .form-control i {
+    /* Establecer posición absoluta para colocar iconos al lado del campo */
     position: absolute;
     top: 45px;
     right: 10px;
+    
+    /* Ocultar iconos por defecto */
     visibility: hidden;
 }
 
+/* Estilos para los mensajes de error */
 .form-control small {
+    /* Establecer posición absoluta para colocar mensaje debajo del campo */
     position: absolute;
     bottom: 0;
     left: 0;
+    
+    /* Ocultar mensajes por defecto */
     visibility: hidden;
 }
 
+/* Estilos para el botón de envío */
 .form button {
+    /* Establecer color de fondo y bordes */
     background-color: #FF1493;
     border: 2px solid #4B0082;
+    
+    /* Establecer color de texto y tamaño de fuente */
     color: #fff;
     font-size: 14px;
+    
+    /* Ocupar todo el ancho disponible */
     width: 100%;
+    
+    /* Establecer bordes redondeados */
     border-radius: 10px;
+    
+    /* Agregar padding para separar contenido */
     padding: 10px;
 }
 
-  /* Error and Success */
+/* Estilos para los campos de control con éxito */
 .form-control.success input {
+    /* Cambiar color de borde para indicar éxito */
     border-color: #4B0082;
 }
 
+/* Estilos para los campos de control con error */
 .form-control.error input {
+    /* Cambiar color de borde para indicar error */
     border-color: #FF1493;
 }
 
+/* Estilos para los iconos de éxito visibles */
 .form-control.success i.fa-check-circle {
+    /* Mostrar icono de éxito */
     color: #FF1493;
     visibility: visible;
 }
 
+/* Estilos para los iconos de error visibles */
 .form-control.error i.fa-exclamation-circle {
+    /* Mostrar icono de error */
     color: #FF1493;
     visibility: visible;
 }
 
+/* Estilos para los mensajes de error visibles */
 .form-control.error small {
+    /* Mostrar mensaje de error */
     visibility: visible;
     color: #FF1493;
 }
