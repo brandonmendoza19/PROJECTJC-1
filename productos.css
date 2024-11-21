@@ -1,189 +1,294 @@
-/* Globales */
+/* 
+Resetear estilos por defecto y configurar box-sizing 
+para que padding y border se incluyan en el ancho y alto 
+*/
 *::after,
 *::before,
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    margin: 0 auto;
-    max-width: 1200px;
-    font-family: 'Lato';
-    color: #556B2F;
-    background-color: #FAEBD7;
+/* 
+Estilos generales para el cuerpo de la página 
+tipo de fuente, color de texto, color de fondo 
+*/
+body {
+  margin: 0 auto; /* Centrar contenido */
+  max-width: 1200px; /* Ancho máximo */
+  font-family: 'Lato'; /* Tipo de fuente */
+  color: #556B2F; /* Color de texto */
+  background-color: #FAEBD7; /* Color de fondo */
 }
 
-.icon-cart{
-    width: 40px;
-    height: 40px;
-    stroke: #556B2F;
+/* 
+Estilos para el icono del carrito 
+tamaño, color 
+*/
+.icon-cart {
+width: 40px;
+height: 40px;
+stroke: #556B2F;
 }
 
-.icon-cart:hover{
-    cursor: pointer;
+/* 
+Efecto hover para el icono del carrito 
+cambiar cursor a mano 
+*/
+.icon-cart:hover {
+cursor: pointer;
 }
 
-img{
-    max-width: 100%;
+/* 
+Estilos para imágenes 
+ancho máximo 
+*/
+img {
+max-width: 100%;
 }
 
-/* Header */
-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 0 40px 0;
+/* 
+Estilos para el header 
+display flex para alinear elementos 
+*/
+header {
+display: flex;
+  justify-content: space-between; /* Espacio entre elementos */
+  padding: 30px 0 40px 0; /* Espacio interior */
 }
 
-.container-icon{
-    position: relative;
+/* 
+Contenedor del icono del carrito 
+posición relativa 
+*/
+.container-icon {
+position: relative;
 }
 
-.count-products{
-    position: absolute;
-    top: 55%;
-    right: 0;
+/* 
+Contador de productos en el carrito 
+posición absoluta, fondo verde, texto blanco 
+*/
+.count-products {
+position: absolute;
+top: 55%;
+right: 0;
 
-    background-color: #556B2F;
-    color: #FAEBD7;
-    width: 25px;
-    height: 25px;
+background-color: #556B2F;
+color: #FAEBD7;
+width: 25px;
+height: 25px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
 }
 
-#contador-productos{
-    font-size: 12px;
+/* 
+Tamaño de fuente para contador de productos 
+*/
+#contador-productos {
+font-size: 12px;
 }
 
-.container-cart-products{
-    position: absolute;
-    top: 50px;
-    right: 0;
+/* 
+Contenedor del carrito 
+posición absoluta, fondo blanco, sombra 
+*/
+.container-cart-products {
+position: absolute;
+top: 50px;
+right: 0;
 
-    background-color: #FAEBD7;
-    width: 400px;
-    z-index: 1;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
-    border-radius: 10px;
-    
+background-color: #FAEBD7;
+width: 400px;
+z-index: 1;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+border-radius: 10px;
 }
 
-.cart-product{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px;
+/* 
+Estilos para cada producto en el carrito 
+display flex para alinear elementos 
+*/
+.cart-product {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 30px;
 
-    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
-
+border-bottom: 1px solid rgba(0, 0, 0, 0.20);
 }
 
-.info-cart-product{
-    display: flex;
-    justify-content: space-between;
-    flex: 0.8;
+/* 
+Información del producto en el carrito 
+display flex para alinear elementos 
+*/
+.info-cart-product {
+display: flex;
+justify-content: space-between;
+flex: 0.8;
 }
 
-.titulo-producto-carrito{
-    font-size: 20px;
+/* 
+Tamaño de fuente para título de producto en carrito 
+*/
+.titulo-producto-carrito {
+font-size: 20px;
 }
 
-.precio-producto-carrito{
-    font-weight: 700;
-    font-size: 20px;
-    margin-left: 10px;
+/* 
+Tamaño de fuente y peso para precio de producto en carrito 
+*/
+.precio-producto-carrito {
+font-weight: 700;
+font-size: 20px;
+margin-left: 10px;
 }
 
-.cantidad-producto-carrito{
-    font-weight: 400;
-    font-size: 20px;
+/* 
+Tamaño de fuente y peso para cantidad de producto en carrito 
+*/
+.cantidad-producto-carrito {
+font-weight: 400;
+font-size: 20px;
 }
 
-.icon-close{
-    width: 25px;
-    height: 25px;
+/* 
+Estilos para icono de cerrar 
+tamaño 
+*/
+.icon-close {
+width: 25px;
+height: 25px;
 }
 
-.icon-close:hover{
-    stroke: #556B2F;
-    cursor: pointer;
+/* 
+Efecto hover para icono de cerrar 
+cambiar color y cursor 
+*/
+.icon-close:hover {
+stroke: #556B2F;
+cursor: pointer;
 }
 
-.cart-total{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    gap: 20px;
+/* 
+Estilos para total del carrito 
+display flex para alinear elementos 
+*/
+.cart-total {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px 0;
+gap: 20px;
 }
 
-.cart-total h3{
-    font-size: 20px;
-    font-weight: 700;
+/* 
+Tamaño de fuente para total del carrito 
+*/
+.cart-total h3 {
+font-size: 20px;
+font-weight: 700;
 }
 
-.total-pagar{
+/* 
+Tamaño de fuente y peso para total a pagar */
+.total-pagar {
     font-size: 20px;
     font-weight: 900;
 }
 
-.hidden-cart{
+/* 
+    Clase para ocultar elementos 
+  */
+.hidden-cart {
     display: none;
 }
 
 
-
-
-/* Main */
-.container-items{
+/* 
+    Estilos para la sección principal 
+  */
+/* 
+    Contenedor de los productos 
+    display grid para alinear elementos 
+  */
+.container-items {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px; /* Espacio entre elementos */
 }
 
-.item{
+/* 
+    Estilos para cada item 
+    bordes redondeados 
+  */
+.item {
     border-radius: 10px;
 }
 
-.item:hover{
+/* 
+    Efecto hover para cada item 
+    sombra 
+  */
+.item:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
 }
 
-.item img{
+/* 
+    Estilos para la imagen de cada item 
+    ancho y alto, objeto que se ajusta 
+  */
+.item img {
     width: 100%;
     height: 300px;
     object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    transition: all .5s;
+    border-radius: 10px 10px 0 0; /* Bordes redondeados */
+    transition: all .5s; /* Transición para el efecto hover */
 }
 
-.item figure{
+/* 
+    Contenedor de la imagen de cada item 
+    ocultar overflow 
+  */
+.item figure {
     overflow: hidden;
 }
-
-.item:hover img{
+/* 
+    Efecto hover para la imagen de cada item 
+    escalar 
+  */
+.item:hover img {
     transform: scale(1.2);
 }
 
-.info-product{
+/* 
+    Información de cada producto 
+    padding, línea de altura 
+  */
+.info-product {
     padding: 15px 30px;
     line-height: 2;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-direction: column; /* Dirección columna */
+    gap: 10px; /* Espacio entre elementos */
 }
 
-.price{
+/* 
+    Tamaño de fuente y peso para precio 
+  */
+.price {
     font-size: 18px;
     font-weight: 900;
 }
-
-.info-product button{
+/* 
+    Estilos para el botón de agregar al carrito 
+    fondo verde, texto blanco 
+  */
+.info-product button {
     border: none;
     background: none;
     background-color: #556B2F;
@@ -192,12 +297,18 @@ header{
     cursor: pointer;
 }
 
-.cart-empty{
+/* 
+    Mensaje cuando el carrito está vacío 
+    padding, texto centrado 
+  */
+.cart-empty {
     padding: 20px;
     text-align: center;
 }
 
-
-.hidden{
+/* 
+    Clase para ocultar elementos 
+  */
+.hidden {
     display: none;
 }
