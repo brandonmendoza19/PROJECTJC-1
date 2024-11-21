@@ -1,239 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
-
-*{
-    margin: 0;
+/* Estilos generales para eliminar márgenes y paddings por defecto y establecer caja de contenido como referencia */
+* {
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: "Poppins", serif;
-    text-decoration: none;
 }
 
-header{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #6B8E23;
+/* Establece la fuente utilizada en el cuerpo del documento */
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
-/*HEADER SUPERIOR*/
-
-.header__superior{
-    max-width: 1200px;
-    margin: auto;
+/* Estilos para el contenedor principal */
+.container {
+    /* Establece una imagen de fondo con degradado */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url("images/img-1-\ (12\).jfif");
+    /* Centra la imagen de fondo */
+    background-position: center;
+    /* Ajusta el tamaño de la imagen de fondo */
+    background-size: cover;
+    /* Establece la altura del contenedor */
+    height: 100vh;
+    /* Establece la visualización en flexbox */
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.logo img{
-    width: 270px;
-}
-
-.search input{
-    width: 350px;
-    padding: 10px;
-}
-
-/*BARRA MENU*/
-
-.container__menu{
-    width: 100%;
-    height: 70px;
-    background: #556B2F;
-    padding: 0px 20px;
-}
-
-.menu {
-    max-width: 1200px;
-    margin: auto;
-    height: 100%;
-}
-
-nav{
-    height: 100%;
-}
-
-nav>ul{
-    height: 100%;
-    display: flex;
-}
-
-nav ul li{
-    height: 100%;
-    list-style: none;
-    position: relative;
-}
-
-nav > ul > li:first-child > a{
-    background-image: url(images/home-removebg-preview.png);
-    background-size: 24px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-nav > ul > li:first-child:hover > a{
-    background-image: url(images/home-removebg-preview.png);
-    background-size: 24px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    padding: 20px 40px;
-}
-
-nav>ul>li>a{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 14px;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 14px;
-    transition: all 300ms ease;
-}
-
-nav > ul > li > a:hover{
-    transform: scale(1.1);
-    background: #BDB76B;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 5);
-}
-
-#selected{
-    transform: scale(1.1);
-    background-color: #BDB76B;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 5);
-}
-
-/*SUBMENU*/
-
-nav ul li ul{
-    width: 200px;
-    display: flex;
+    /* Establece la dirección de los elementos en flexbox */
     flex-direction: column;
-    background: #556B2F;
-    position: absolute;
-    top: 90px;
-    left: -5px;
-    padding: 14px;
-    visibility: hidden;
-    opacity: 0;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 5);
-    z-index: 10;
-    transition: all 300ms ease;
-}
-
-nav ul li:hover ul{
-    visibility: visible;
-    opacity: 1;
-    top: 70px;
-}
-
-nav ul li ul::before{
-    content: '';
-    width: o;
-    height: 0;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 12px solid white;
-    position: absolute;
-    top: -12px;
-    left: 20px;
-}
-
-nav ul li ul li a{
-    display: block;
-    color: white;
-    padding: 6px;
-    margin-left: 14px;
-    margin-top: 10px;
-    font-size: 14px;
-    text-transform: uppercase;
-    transition: all 300ms ease;
-}
-
-nav ul li ul li a:hover{
-    background: #BDB76B;
-    color: #fff;
-    transform: scale(1.1);
-    padding-left: 30px;
-    font-size: 14px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 5);
-}
-/*Elementos responsivos*/
-
-.icon__menu{
-    font-size: 26px;
-    color: white;
-    cursor: pointer;
-    width: 26px;
-    height:  100%;
-    display: none;
+    /* Centra los elementos horizontalmente */
     align-items: center;
+    /* Centra los elementos verticalmente */
+    justify-content: center;
 }
 
-#label__check{
-    width: 26px;
-    height: 100%;
-    display: none;
-}
-#check__menu{
-    display: none;
+/* Estilos para la caja que contiene el logo */
+.box {
+    /* Establece el color de fondo */
+    background-color: rgba(0, 0, 0, 0.726);
+    /* Establece el ancho */
+    width: 100%;
+    /* Establece el ancho máximo */
+    max-width: 800px;
+    /* Agrega espacio interior */
+    padding: 20px;
+    /* Centra el texto */
+    text-align: center;
 }
 
-@media screen and (max-width: 720px){
-    .search input{
-        display: none;
-    }
-    .header__superior{
+/* Estilos para la imagen del logo */
+img {
+    /* Establece el ancho */
+    width: 100%;
+    /* Establece el ancho máximo */
+    max-width: 300px; 
+}
+
+/* Estilos para el contenido principal */
+.main {
+    /* Centra el texto */
+    text-align: center;
+    /* Establece el color del texto */
+    color: #e3cdb6;
+    /* Establece el color de fondo */
+    background-color: rgba(0, 0, 0, 0.596);
+    /* Agrega bordes redondeados */
+    border-radius: 10px;
+    /* Agrega espacio interior */
+    padding: 20px;
+    /* Establece el ancho */
+    width: 90%;
+    /* Establece el ancho máximo */
+    max-width: 700px; 
+}
+
+/* Estilos para la navegación */
+.navbar {
+    /* Agrega margen superior */
+    margin-top: 20px;
+}
+
+/* Estilos para la lista de navegación */
+.navbar ul {
+    /* Elimina estilos de lista por defecto */
+    list-style: none;
+    /* Elimina padding por defecto */
+    padding: 0;
+}
+
+/* Estilos para los elementos de la lista de navegación */
+.navbar li {
+    /* Establece la visualización en línea */
+    display: inline;
+    /* Agrega margen derecho */
+    margin-right: 20px;
+}
+
+/* Estilos para los enlaces de navegación */
+.navbar a {
+    /* Elimina subrayado por defecto */
+    text-decoration: none;
+    /* Establece el color del texto */
+    color: #e3cdb6;
+    /* Establece el tamaño de fuente */
+    font-size: 15px;
+    /* Establece el peso de fuente */
+    font-weight: 600;
+}
+
+/* Estilos para los enlaces de navegación al pasar el mouse */
+.navbar a:hover {
+    /* Establece el color del texto al pasar el mouse */
+    color: #FFA500;
+}
+
+/* Media query para ajustar estilos en dispositivos móviles */
+@media (max-width: 768px) {
+    /* Reduce el padding del contenido principal */
+    .main {
         padding: 10px;
     }
-    .logo image{
-        width: 200px;
-    }
-
-    nav > ul{
-        flex-direction: column;
-        background-color: #BDB76B;
-        position: fixed;
-        left: o;
-        top: 158px;
-        width: 100;
-        height: 0px;
-        transition: all 300ms else;
-        z-index: 100;
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    nav > ul > li > a:hover{
-        transform: scale(1);
-    }
-
-nav ul li ul{
-    left: 90px;
-}
-
-nav > ul > li:hover{
-    top: 50px;
-}
-
-nav > ul > li:first-child a{
-    background-position: 20px;
-}
-#selected{
-    transform: scale(1);
-}
-    #label__check{
+    
+    /* Establece la visualización en bloque para los elementos de la lista de navegación */
+    .navbar li {
         display: block;
-    }
-
-    .icon__menu{
-        display: flex;
-    }
-    #check__menu:checked ~ nav > ul{
-        height: 300px;
-        visibility: visible;
-        opacity: 1;
     }
 }
