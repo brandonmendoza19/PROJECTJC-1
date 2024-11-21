@@ -1,60 +1,47 @@
+<!-- Declaración del documento HTML5 -->
 <!DOCTYPE html>
-<html lang="en">
+<!-- Etiqueta raíz del documento HTML, especificando el idioma como español -->
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú GeoArt V</title>
-    <script src="https://kit.fontawesome.com/41bca2ae3.js"
-    crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="menu.css">
+    <!-- Codificación de caracteres utilizada en el documento -->
+    <meta charset="UTF-8" />
+    <!-- Configura la compatibilidad con Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Configura la visualización en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título de la página -->
+    <title>Bienvenido GeoArt V</title>
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="menu.css" />
+    <!-- Enlace a la biblioteca de iconos Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
+<!-- Cuerpo del documento HTML -->
 <body>
-
-    <header>
-        
-        <div class="header__superior">
-            <div class="logo">      
-                <img src="images/GEOART_LOGO-removebg-preview.png" alt="">
-            </div>
-            <div class="search">
-                <input type="search" placeholder="¿Que deseas buscar?">
-            </div>
-        </div>
-        <div class="container__menu">
-            <div class="menu">
-                <label id="#label__check" for="check__menu">
-                    <input type="checkbox" id="check__menu" aria-label="Toggie menu">
-                    <i class="fas fa-bars icon__menu"></i>
-                </label>
-                <nav>
-                    <ul>
-
-                        <li><a href="#" id="selected"></a></li>
-                        <li><a href="#">Servicios</a>
-                            <ul>
-                                <li><a href="%">Productos</a></li>
-                                <li><a href="%">Consejos</a></li>
-                                <li><a href="%">Talleres</a></li>
-                                <li><a href="%">Cursos</a></li>
-                                <li><a href="%">Eventos</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Nosotros</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Diseños</a></li>
-                        <li><a href="#">Contactos</a></li>
-                    </ul>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Caja que contiene el logo -->
+        <header class="box">
+            <!-- Imagen del logo -->
+            <img src="images/GEOART_LOGO-removebg-preview.png" alt="Logo GeoArt" />
+        </header>
+        <!-- Contenido principal -->
+        <div class="main">
+            <!-- Título del contenido principal -->
+            <h1>Bienvenido a GeoArt V</h1>
+            <!-- Texto del contenido principal -->
+            <p>
+                Cada una de mis piezas es un viaje sensorial, una exploración de texturas y colores que cobran vida a partir de materiales que otros consideran basura. Transformo objetos cotidianos en obras de arte únicas, invitando al espectador a reflexionar sobre el valor de lo desechado y la belleza que se esconde en lo inesperado.
+            </p>
+            <!-- Navegación -->
+            <nav class="navbar">
+                <!-- Lista de navegación -->
+                <ul>
+                    <!-- Elemento de la lista de navegación -->
+                    <li><a href="index.html">Inicio</a></li>
                 </ul>
-                </nav>
-            </div>
+            </nav>
         </div>
-            
-    </header>
-    <main>
-        <article>
-            <h2></h2>
-            <p></p>
-        </article>
-    </main>
+    </div>
 </body>
 </html>
