@@ -1,0 +1,116 @@
+/* Importación de la fuente Open Sans desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Estilos generales para todos los elementos */
+* {
+    /* Eliminar márgenes y paddings por defecto */
+    margin: 0;
+    padding: 0;
+    
+    /* Establecer caja de contenido como referencia para cálculos */
+    box-sizing: border-box;
+    
+    /* Establecer fuente por defecto */
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Estilos para el contenedor principal del formulario */
+.container-form {
+    /* Establecer ancho máximo y centrar horizontalmente */
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    
+    /* Establecer alineación vertical y envoltura de contenido */
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+    /* Agregar padding superior e inferior */
+    padding: 40px 0;
+}
+
+/* Estilos para los párrafos dentro del contenedor principal */
+.container-form p {
+    /* Establecer tamaño de fuente y interlineado */
+    font-size: 16px;
+    line-height: 1.6;
+    
+    /* Agregar margen inferior */
+    margin-bottom: 20px;
+}
+
+/* Estilos para los enlaces dentro del contenedor principal */
+.container-form a {
+    /* Establecer tamaño de fuente y estilo de enlace */
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: none;
+    
+    /* Establecer ancho y margen inferior */
+    width: 100%;
+    margin-bottom: 15px;
+    
+    /* Establecer color y transición de color */
+    color: orangered;
+    transition: color 0.2s ease-in-out; 
+}
+
+/* Estilos para los enlaces en estado hover */
+.container-form a:hover {
+    /* Cambiar color en estado hover */
+    color: darkorange; 
+}
+
+/* Estilos para los iconos dentro de los enlaces */
+.container-form a i {
+    /* Agregar margen derecho */
+    margin-right: 10px;
+}
+
+/* Estilos para la imagen de fondo */
+.orange-img {
+    /* Establecer ancho y alto automáticos */
+    width: 100%;
+    height: auto; 
+    
+    /* Establecer posición relativa */
+    position: relative;
+}
+
+/* Estilos para la imagen dentro de la imagen de fondo */
+.orange-img img {
+    /* Establecer ancho y alto automáticos */
+    width: 100%; 
+    height: auto; 
+}
+
+/* Media query para dispositivos con ancho máximo de 768px (tabletas y móviles) */
+@media (max-width: 768px) {
+    /* Cambiar alineación y envoltura de contenido en el contenedor principal */
+    .container-form {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0; 
+    }
+    
+    /* Reducir tamaño de fuente en párrafos y enlaces */
+    .container-form p, .container-form a {
+        font-size: 14px;
+    }
+}
+
+/* Media query para dispositivos con ancho máximo de 576px (móviles pequeños) */
+@media (max-width: 576px) {
+    /* Reducir ancho máximo y padding en el contenedor principal */
+    .container-form {
+        max-width: 90%;
+        padding: 20px 0;
+    }
+    
+    /* Reducir tamaño de fuente en párrafos y enlaces */
+    .container-form p, .container-form a {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+}
