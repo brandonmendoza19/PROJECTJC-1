@@ -1,314 +1,255 @@
-/* 
-Resetear estilos por defecto y configurar box-sizing 
-para que padding y border se incluyan en el ancho y alto 
-*/
+/* Estilos generales para eliminar márgenes y paddings por defecto y establecer caja de contenido como referencia */
 *::after,
 *::before,
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Establece la caja de contenido como referencia para calcular ancho y alto */
 }
 
-/* 
-Estilos generales para el cuerpo de la página 
-tipo de fuente, color de texto, color de fondo 
-*/
-body {
-  margin: 0 auto; /* Centrar contenido */
-  max-width: 1200px; /* Ancho máximo */
-  font-family: 'Lato'; /* Tipo de fuente */
-  color: #556B2F; /* Color de texto */
-  background-color: #FAEBD7; /* Color de fondo */
+/* Estilos para el cuerpo del documento */
+body{
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'Lato';
+    color: #556B2F;
+    background-color: #FAEBD7;
+    /* Establece la fuente, color de texto y fondo del documento */
 }
 
-/* 
-Estilos para el icono del carrito 
-tamaño, color 
-*/
-.icon-cart {
-width: 40px;
-height: 40px;
-stroke: #556B2F;
+/* Estilos para el ícono de carrito */
+.icon-cart{
+    width: 40px;
+    height: 40px;
+    stroke: #556B2F;
+    /* Establece el tamaño y color del ícono de carrito */
 }
 
-/* 
-Efecto hover para el icono del carrito 
-cambiar cursor a mano 
-*/
-.icon-cart:hover {
-cursor: pointer;
+/* Estilos para el ícono de carrito al pasar el mouse */
+.icon-cart:hover{
+    cursor: pointer;
+    /* Cambia el cursor a mano para indicar clickeabilidad */
 }
 
-/* 
-Estilos para imágenes 
-ancho máximo 
-*/
-img {
-max-width: 100%;
+/* Estilos para las imágenes */
+img{
+    max-width: 100%;
+    /* Establece el ancho máximo de las imágenes */
 }
 
-/* 
-Estilos para el header 
-display flex para alinear elementos 
-*/
-header {
-display: flex;
-  justify-content: space-between; /* Espacio entre elementos */
-  padding: 30px 0 40px 0; /* Espacio interior */
+/* Estilos para el encabezado */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+    /* Establece la visualización en flexbox y distribución de elementos en el encabezado */
 }
 
-/* 
-Contenedor del icono del carrito 
-posición relativa 
-*/
-.container-icon {
-position: relative;
+/* Estilos para el contenedor del ícono de carrito */
+.container-icon{
+    position: relative;
+    /* Establece la posición relativa para posicionar elementos absolutos */
 }
 
-/* 
-Contador de productos en el carrito 
-posición absoluta, fondo verde, texto blanco 
-*/
-.count-products {
-position: absolute;
-top: 55%;
-right: 0;
-
-background-color: #556B2F;
-color: #FAEBD7;
-width: 25px;
-height: 25px;
-
-display: flex;
-justify-content: center;
-align-items: center;
-border-radius: 50%;
+/* Estilos para el contador de productos */
+.count-products{
+    position: absolute;
+    top: 55%;
+    right: 0;
+    background-color: #556B2F;
+    color: #FAEBD7;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /* Posiciona y estiliza el contador de productos */
 }
 
-/* 
-Tamaño de fuente para contador de productos 
-*/
-#contador-productos {
-font-size: 12px;
+/* Estilos para el contador de productos */
+#contador-productos{
+    font-size: 12px;
+    /* Establece el tamaño de fuente del contador */
 }
 
-/* 
-Contenedor del carrito 
-posición absoluta, fondo blanco, sombra 
-*/
-.container-cart-products {
-position: absolute;
-top: 50px;
-right: 0;
-
-background-color: #FAEBD7;
-width: 400px;
-z-index: 1;
-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
-border-radius: 10px;
+/* Estilos para el contenedor de productos del carrito */
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #FAEBD7;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 10px;
+    /* Posiciona y estiliza el contenedor de productos del carrito */
 }
 
-/* 
-Estilos para cada producto en el carrito 
-display flex para alinear elementos 
-*/
-.cart-product {
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 30px;
-
-border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+/* Estilos para cada producto en el carrito */
+.cart-product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+    /* Establece la visualización en flexbox y distribución de elementos en cada producto del carrito */
 }
 
-/* 
-Información del producto en el carrito 
-display flex para alinear elementos 
-*/
-.info-cart-product {
-display: flex;
-justify-content: space-between;
-flex: 0.8;
+/* Estilos para la información del producto en el carrito */
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8;
+    /* Establece la visualización en flexbox y distribución de elementos en la información del producto */
 }
 
-/* 
-Tamaño de fuente para título de producto en carrito 
-*/
-.titulo-producto-carrito {
-font-size: 20px;
+/* Estilos para el título del producto en el carrito */
+.titulo-producto-carrito{
+    font-size: 20px;
+    /* Establece el tamaño de fuente del título del producto */
 }
 
-/* 
-Tamaño de fuente y peso para precio de producto en carrito 
-*/
-.precio-producto-carrito {
-font-weight: 700;
-font-size: 20px;
-margin-left: 10px;
+/* Estilos para el precio del producto en el carrito */
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 10px;
+    /* Establece el tamaño de fuente y peso del precio del producto */
 }
 
-/* 
-Tamaño de fuente y peso para cantidad de producto en carrito 
-*/
-.cantidad-producto-carrito {
-font-weight: 400;
-font-size: 20px;
+/* Estilos para la cantidad del producto en el carrito */
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 20px;
+    /* Establece el tamaño de fuente y peso de la cantidad del producto */
 }
 
-/* 
-Estilos para icono de cerrar 
-tamaño 
-*/
-.icon-close {
-width: 25px;
-height: 25px;
+/* Estilos para el ícono de cierre */
+.icon-close{
+    width: 25px;
+    height: 25px;
+    /* Establece el tamaño del ícono de cierre */
 }
 
-/* 
-Efecto hover para icono de cerrar 
-cambiar color y cursor 
-*/
-.icon-close:hover {
-stroke: #556B2F;
-cursor: pointer;
+/* Estilos para el ícono de cierre al pasar el mouse */
+.icon-close:hover{
+    stroke: #556B2F;
+    cursor: pointer;
+    /* Cambia el cursor a mano para indicar clickeabilidad */
 }
 
-/* 
-Estilos para total del carrito 
-display flex para alinear elementos 
-*/
-.cart-total {
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 20px 0;
-gap: 20px;
+/* Estilos para el total del carrito */
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 20px;
+    /* Establece la visualización en flexbox y distribución de elementos en el total del carrito */
 }
 
-/* 
-Tamaño de fuente para total del carrito 
-*/
-.cart-total h3 {
-font-size: 20px;
-font-weight: 700;
+/* Estilos para el título del total del carrito */
+.cart-total h3{
+    font-size: 20px;
+    font-weight: 700;
+    /* Establece el tamaño de fuente y peso del título del total */
 }
 
-/* 
-Tamaño de fuente y peso para total a pagar */
-.total-pagar {
+/* Estilos para el total a pagar */
+.total-pagar{
     font-size: 20px;
     font-weight: 900;
+    /* Establece el tamaño de fuente y peso del total a pagar */
 }
 
-/* 
-    Clase para ocultar elementos 
-  */
-.hidden-cart {
+/* Estilos para ocultar el carrito */
+.hidden-cart{
     display: none;
+    /* Oculta el elemento */
 }
 
 
-/* 
-    Estilos para la sección principal 
-  */
-/* 
-    Contenedor de los productos 
-    display grid para alinear elementos 
-  */
-.container-items {
+/* Estilos para el main */
+.container-items{
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-    gap: 20px; /* Espacio entre elementos */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    /* Establece la visualización en grid y distribución de elementos en el contenedor de items */
 }
 
-/* 
-    Estilos para cada item 
-    bordes redondeados 
-  */
-.item {
+/* Estilos para cada item */
+.item{
     border-radius: 10px;
+    /* Establece la forma redondeada del item */
 }
 
-/* 
-    Efecto hover para cada item 
-    sombra 
-  */
-.item:hover {
+/* Estilos para cada item al pasar el mouse */
+.item:hover{
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    /* Agrega sombra al item al pasar el mouse */
 }
 
-/* 
-    Estilos para la imagen de cada item 
-    ancho y alto, objeto que se ajusta 
-  */
-.item img {
+/* Estilos para la imagen del item */
+.item img{
     width: 100%;
     height: 300px;
     object-fit: cover;
-    border-radius: 10px 10px 0 0; /* Bordes redondeados */
-    transition: all .5s; /* Transición para el efecto hover */
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+    /* Establece el tamaño y ajuste de la imagen del item */
 }
 
-/* 
-    Contenedor de la imagen de cada item 
-    ocultar overflow 
-  */
-.item figure {
+/* Estilos para la figura del item */
+.item figure{
     overflow: hidden;
-}
-/* 
-    Efecto hover para la imagen de cada item 
-    escalar 
-  */
-.item:hover img {
-    transform: scale(1.2);
+    /* Oculta el overflow de la figura */
 }
 
-/* 
-    Información de cada producto 
-    padding, línea de altura 
-  */
-.info-product {
+/* Estilos para la imagen del item al pasar el mouse */
+.item:hover img{
+    transform: scale(1.2);
+    /* Aplica el efecto de zoom a la imagen al pasar el mouse */
+}
+
+/* Estilos para la información del item */
+.info-product{
     padding: 15px 30px;
     line-height: 2;
     display: flex;
-    flex-direction: column; /* Dirección columna */
-    gap: 10px; /* Espacio entre elementos */
+    flex-direction: column;
+    gap: 10px;
+    /* Establece la visualización en flexbox y distribución de elementos en la información del item */
 }
 
-/* 
-    Tamaño de fuente y peso para precio 
-  */
-.price {
+/* Estilos para el precio del item */
+.price{
     font-size: 18px;
     font-weight: 900;
+    /* Establece el tamaño de fuente y peso del precio del item */
 }
-/* 
-    Estilos para el botón de agregar al carrito 
-    fondo verde, texto blanco 
-  */
-.info-product button {
+
+/* Estilos para el botón de agregar al carrito */
+.info-product button{
     border: none;
     background: none;
     background-color: #556B2F;
     color: #FAEBD7;
     padding: 15px 10px;
     cursor: pointer;
+    /* Establece el estilo del botón de agregar al carrito */
 }
 
-/* 
-    Mensaje cuando el carrito está vacío 
-    padding, texto centrado 
-  */
-.cart-empty {
+/* Estilos para el mensaje de carrito vacío */
+.cart-empty{
     padding: 20px;
     text-align: center;
+    /* Establece el estilo del mensaje de carrito vacío */
 }
 
-/* 
-    Clase para ocultar elementos 
-  */
-.hidden {
+/* Estilos para ocultar elementos */
+.hidden{
     display: none;
+    /* Oculta el elemento */
 }

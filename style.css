@@ -1,373 +1,643 @@
+/* Importa la fuente Poppins desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Estilos globales para todos los elementos */
 *{
-    margin: o;
-    padding: o;
+    /* Elimina margenes */
+    margin: 0;
+    /* Elimina paddings */
+    padding: 0;
+    /* Establece box-sizing para incluir paddings y bordes en el ancho y alto */
     box-sizing: border-box;
+    /* Elimina decoraciones de texto */
     text-decoration: none;
+    /* Elimina estilos de lista */
     list-style: none;
 }
 
-
+/* Estilos para el cuerpo de la página */
 body {
+    /* Establece la fuente Poppins como fuente principal */
     font-family: "Poppins", sans-serif;
 }
 
+/* Contenedor principal */
 .container {
+    /* Establece el ancho máximo */
     max-width: 1200px;
+    /* Centra el contenedor */
     margin: 0 auto;
+    /* Agrega padding a los lados */
     padding: 0 15px;
 }
 
+/* Encabezado de la página */
 .header {
-    background-image: linear-gradient(
-        #4B0082,
-        #FF1493),
-        url(images/img-jpg-png\ \(1\).jpg);
+    /* Establece el fondo con un gradiente y una imagen */
+    background-image: linear-gradient(#4B0082, #FF1493), url(images/img-jpg-png\ \(1\).jpg);
+    /* Centra la imagen de fondo */
     background-position: center bottom;
+    /* No repite la imagen de fondo */
     background-repeat: no-repeat;
+    /* Cubre todo el espacio */
     background-size: cover;
+    /* Establece la altura mínima */
     min-height: 70vh;
+    /* Display flex para alinear elementos */
     display: flex;
+    /* Dirección del eje principal */
     flex-direction: column; 
+    /* Alinea elementos horizontalmente */
     align-items: center;
-    align-items: center;
+    /* Alinea elementos verticalmente */
+    justify-content: center;
+    /* Agrega padding */
     padding: 40px;
-
 }
 
+/* Menú de navegación */
 .menu {
+    /* Posición absoluta */
     position: absolute;
+    /* Ubicación en la parte superior */
     top: 20px;
+    /* Ancho completo */
     left: 0;
     right: 0;
+    /* Display flex para alinear elementos */
     display: flex;
+    /* Alinea elementos horizontalmente */
     align-items: center;
+    /* Justifica contenido */
     justify-content: space-between;
 }
 
+/* Logo del sitio */
 .logo {
+    /* Color del texto */
     color: #2E8B57;
+    /* Tamaño de fuente */
     font-size: 25px;
+    /* Peso de fuente */
     font-weight: 800;
 }
+
+/* Elementos del menú */
 .menu .navbar ul li {
+    /* Posición relativa */
     position: relative;
+    /* Flota a la izquierda */
     float: left;
 }
+
+/* Enlaces del menú */
 .menu .navbar ul li a {
+    /* Tamaño de fuente */
     font-size: 18px;
+    /* Padding */
     padding: 20px;
+    /* Color del texto */
     color: #3CB371;
+    /* Display block para ocupar todo el espacio */
     display: block;
+    /* Peso de fuente */
     font-weight: 600;
 }
+
+/* Efecto hover en enlaces del menú */
 .menu .navbar ul li a:hover{
+    /* Cambia color del texto */
     color: #FFA500;
 }
+
+/* Checkbox para mostrar/ocultar menú */
 #menu {
+    /* Oculta el checkbox */
     display: none;
 }
+
+/* Ícono del menú */
 .menu-icono {
+    /* Ancho del ícono */
     width: 25px;
 }
+
+/* Etiqueta del checkbox */
 .menu label {
+    /* Cursor en forma de mano */
     cursor: pointer;
+    /* Oculta la etiqueta */
     display: none;
 }
 
+/* Contenido del encabezado */
 .header-content {
+    /* Alinea texto horizontalmente */
     text-align: center;
 }
+
+/* Título del encabezado */
 .header-content h1 {
+    /* Tamaño de fuente */
     font-size: 75px;
+    /* Altura de línea */
     line-height: 80px;
+    /* Color del texto */
     color: #2E8B57;
+    /* Transforma texto a mayúsculas */
     text-transform: uppercase;
+    /* Margen inferior */
     margin-bottom: 35px;
 }
+
+/* Texto descriptivo del encabezado */
 .header-content p {
+    /* Tamaño de fuente */
     font-size: 16px;
+    /* Color del texto */
     color: #3CB371;
+    /* Padding */
     padding: 0 25px;
+    /* Margen inferior */
     margin-bottom: 25px;
 }
+
+/* Botón de llamada a acción */
 .btn-1 {
+    /* Display inline-block para ocupar espacio */
     display: inline-block;
+    /* Padding */
     padding: 11px 35px;
+    /* Color de fondo */
     background-color: #3CB371;
+    /* Color del texto */
     color: #f9fafc;
+    /* Transforma texto a mayúsculas */
     text-transform: uppercase;
 }
+
+/* Efecto hover en botón de llamada a acción */
 .btn-1:hover {
+    /* Cambia color de fondo */
     background-color: #FFA500;
 }
+
+/* Sección de contenido */
 .carton {
+    /* Padding */
     padding: 100px 0;
+    /* Color de fondo */
     background-color: #F5DEB3;
+    /* Posición relativa */
     position: relative;
+    /* Imagen de fondo */
     background-image: center;
 }
+
+/* Contenido de la sección */
 .carton-content {
+    /* Alinea texto horizontalmente */
     text-align: center;
 }
+
+/* Título de la sección */
 .carton-content h2 {
+    /* Tamaño de fuente */
     font-size: 55px;
+    /* Altura de línea */
     line-height: 70px;
+    /* Color del texto */
     color: #2E8B57;
+    /* Transforma texto a mayúsculas */
     text-transform: uppercase;
+    /* Padding */
     padding: 0 25px;
+    /* Margen inferior */
     margin-bottom: 15px;
 }
+
+/* Texto descriptivo de la sección */
 .txt-p {
+    /* Tamaño de fuente */
     font-size: 16px;
+    /* Color del texto */
     color: #000000;
+    /* Padding */
     padding: 0 25px;
+    /* Margen inferior */
     margin-bottom: 35px;
 }
+
+/* Grupo de elementos */
 .carton-group {
+    /* Display flex para alinear elementos */
     display: flex;
+    /* Flex-wrap para envolver elementos */
     flex-wrap: wrap;
+    /* Justifica contenido */
     justify-content: space-between;
+    /* Margen inferior */
     margin-bottom: 50px;
 }
+
+/* Elemento del grupo */
 .carton-1 {
+    /* Flex para ocupar espacio */
     flex: 1;
+    /* Padding */
     padding: 0 25px;
+    /* Alinea texto horizontalmente */
     text-align: center;
 }
+
+/* Imagen del elemento */
 .carton-1 img {
+    /* Ancho completo */
     width: 100%;
+    /* Máximo ancho */
     max-width: 200px;
 }
-.carton-img {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
+
+/* Título del elemento */
 .carton-1 h3 {
+    /* Color del texto */
     color: #2E8B57;
+    /* Tamaño de fuente */
     font-size: 20px;
+    /* Margen inferior */
     margin-bottom: 15px;
 }
+
+/* Sección de servicios */
 .services {
-    background-image: linear-gradient(
-        rgba(0, 0, 0, 0.7),
-        #7B68EE),
-        url(images/11-img.jpg);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        padding: 100px 0;
+    /* Color de fondo */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), #7B68EE),
+    /* Imagen de fondo */
+    url(images/11-img.jpg);
+    /* Centra la imagen de fondo */
+    background-position: center center;
+    /* No repite la imagen de fondo */
+    background-repeat: no-repeat;
+    /* Cubre todo el espacio */
+    background-size: cover;
+    /* Fija la imagen de fondo */
+    background-attachment: fixed;
+    /* Padding */
+    padding: 100px 0;
 }
+
+/* Contenido de la sección de servicios */
 .services-content {
-    text-align: center
-}
-.services-content h2 {
-    font-size: 55px;
-    line-height: 70px;
-    color: #48D1CC;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-}
-.services-content p {
-    font-size: 16px;
-    color: #48D1CC;
-    margin-bottom: 50px;
-    padding: 0 20px;
-}
-.services-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-.services-1 {
-    flex: 1;
-    padding: 0 20px;
+    /* Alinea texto horizontalmente */
     text-align: center;
 }
+
+/* Título de la sección de servicios */
+.services-content h2 {
+    /* Tamaño de fuente */
+    font-size: 55px;
+    /* Altura de línea */
+    line-height: 70px;
+    /* Color del texto */
+    color: #48D1CC;
+    /* Transforma texto a mayúsculas */
+    text-transform: uppercase;
+    /* Margen inferior */
+    margin-bottom: 50px;
+}
+
+/* Texto descriptivo de la sección de servicios */
+.services-content p {
+    /* Tamaño de fuente */
+    font-size: 16px;
+    /* Color del texto */
+    color: #48D1CC;
+    /* Margen inferior */
+    margin-bottom: 50px;
+    /* Padding */
+    padding: 0 20px;
+}
+
+/* Grupo de servicios */
+.services-group {
+    /* Display flex para alinear elementos */
+    display: flex;
+    /* Flex-wrap para envolver elementos */
+    flex-wrap: wrap;
+    /* Justifica contenido */
+    justify-content: space-between;
+    /* Margen inferior */
+    margin-bottom: 50px;
+}
+
+/* Servicio individual */
+.services-1 {
+    /* Flex para ocupar espacio */
+    flex: 1;
+    /* Padding */
+    padding: 0 20px;
+    /* Alinea texto horizontalmente */
+    text-align: center;
+}
+
+/* Imagen del servicio */
 .services-1 img {
+    /* Ancho completo */
     width: 100%;
+    /* Máximo ancho */
     max-width: 250px;
+    /* Margen inferior */
     margin-bottom: 20px;
 }
+
+/* Título del servicio */
 .services-1 h3 {
+    /* Color del texto */
     color: #F0E68C;
+    /* Tamaño de fuente */
     font-size: 40px;
 }
+
+/* Sección general */
 .general {
+    /* Display flex para alinear elementos */
     display: flex;
+    /* Flex-wrap para envolver elementos */
     flex-wrap: wrap;
 }
+
+/* Elemento general */
 .general-1 {
+    /* Ancho del elemento */
     width: 50%;
+    /* Padding */
     padding: 100px 50px;
+    /* Color de fondo */
     background-color: #F0E68C;
 }
+
+/* Imagen del elemento general */
 .general-2 {
+    /* Imagen de fondo */
     background-image: url(images/reciclaje-1.jpg);
+    /* Centra la imagen de fondo */
     background-position: center center;
+    /* No repite la imagen de fondo */
     background-repeat: no-repeat;
+    /* Cubre todo el espacio */
     background-size: cover;
-    width: 50%;
-}
-.general-3 {
-    background-image: url(images/img-1-\ \(14\).jfif);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* Ancho del elemento */
     width: 50%;
 }
 
+/* Imagen del elemento general */
+.general-3 {
+    /* Imagen de fondo */
+    background-image: url(images/img-1-\ \(14\).jfif);
+    /* Centra la imagen de fondo */
+    background-position: center center;
+    /* No repite la imagen de fondo */
+    background-repeat: no-repeat;
+    /* Cubre todo el espacio */
+    background-size: cover;
+    /* Ancho del elemento */
+    width: 50%;
+}
+
+/* Título general */
 h2 {
+    /* Tamaño de fuente */
     font-size: 55px;
+    /* Altura de línea */
     line-height: 70px;
+    /* Color del texto */
     color: #000;
+    /* Transforma texto a mayúsculas */
     text-transform: uppercase;
+    /* Margen inferior */
     margin-bottom: 20px;
 }
 
+/* Texto general */
 p {
+    /* Tamaño de fuente */
     font-size: 16px;
+    /* Color del texto */
     color: #000;
+    /* Margen inferior */
     margin: 25px 0 45px 0;
 }
+
+/* Sección de blog */
 .blog {
+    /* Padding */
     padding: 100px;
+    /* Alinea texto horizontalmente */
     text-align: center;
 }
+
+/* Contenido del blog */
 .blog-content {
+    /* Display flex para alinear elementos */
     display: flex;
+    /* Flex-wrap para envolver elementos */
     flex-wrap: wrap;
+    /* Justifica contenido */
     justify-content: space-between;
 }
+
+/* Entrada del blog */
 .blog-1 {
+    /* Padding */
     padding: 15px 10px;
+    /* Flex para ocupar espacio */
     flex: 1;
 }
+
+/* Imagen de la entrada del blog */
 .blog-1 img {
+    /* Ancho completo */
     width: 100%;
+    /* Máximo ancho */
     max-width: 250px;
+    /* Border-radius para esquinas redondeadas */
     border-radius: 15px;
+    /* Margen inferior */
     margin-bottom: 15px;
 }
+
+/* Título de la entrada del blog */
 .blog-1 h3 {
+    /* Tamaño de fuente */
     font-size: 25px;
+    /* Color del texto */
     color: #2E8B57;
 }
 
+/* Pie de página */
 .footer {
+    /* Padding */
     padding: 100px 0;
+    /* Color de fondo */
     background-color: #000;
 }
+
+/* Contenido del pie de página */
 .footer-content {
+    /* Display flex para alinear elementos */
     display: flex;
+    /* Flex-wrap para envolver elementos */
     flex-wrap: wrap;
+    /* Justifica contenido */
     justify-content: space-between;
 }
 
+/* Título del enlace */
 link h3 {
+    /* Tamaño de fuente */
     font-size: 18px;
+    /* Color del texto */
     color: #2E8B57;
+    /* Margen inferior */
     margin-bottom: 15px;
 }
 
+/* Enlace */
 link a {
+    /* Tamaño de fuente */
     font-size: 16px;
+    /* Color del texto */
     color: #2E8B57;
+    /* Display block para ocupar todo el espacio */
     display: block;
+    /* Margen inferior */
     margin-bottom: 15px;
 }
-@media(max-width: 991px) {
+
+/* Media queries para responsividad */
+@media (max-width: 991px) {
+    /* Ajusta estilos para pantallas más pequeñas */
     .menu {
+        /* Padding */
         padding: 30px 15px;
     }
     .menu label {
+        /* Muestra la etiqueta */
         display: block;
     }
     .menu .navbar {
+        /* Posición absoluta */
         position: absolute;
+        /* Top */
         top: 100%;
+        /* Left y right */
         left: 0;
         right: 0;
+        /* Color de fondo */
         background-color: #3CB3;
+        /* Oculta el menú */
         display: none;
     }
     .menu .navbar ul li {
+        /* Ancho completo */
         width: 100%;
     }
     #menu:checked ~ .navbar {
+        /* Muestra el menú */
         display: flex;
     }
 
+    /* Ajusta estilos para pantallas más pequeñas */
     .header {
+        /* Min-height */
         min-height: 0;
+        /* Padding */
         padding: 40px 15px;
     }
     .header-content {
+        /* Padding */
         padding: 100px 15px;
     }
     .header-content p {
+        /* Padding */
         padding: 0;
     }
     .carton {
+        /* Padding */
         padding: 30px 15px;
     }
     .carton-content h2 {
+        /* Padding */
         padding: 0;
     }
     .txt-p {
+        /* Padding */
         padding: 0;
     }
     .carton-group {
+        /* Flex-direction para columna */
         flex-direction: column;
+        /* Margen inferior */
         margin-bottom: 0;
     }
     .carton-img {
+        /* Oculta la imagen */
         display: none;
     }
     .services {
+        /* Padding */
         padding: 30px;
     }
-
     .services-content p {
+        /* Padding */
         padding: 0;
     }
     .services-group {
+        /* Flex-direction para columna */
         flex-direction: column;
+        /* Margen inferior */
         margin-bottom: 0;
     }
     .services-1 {
+        /* Margen inferior */
         margin-bottom: 25px;
     }
     .general {
+        /* Flex-direction para columna */
         flex-direction: column;
     }
     .general-1 {
+        /* Ancho completo */
         width: 100%;
+        /* Padding */
         padding: 30px;
+        /* Alinea texto horizontalmente */
         text-align: center;
     }
-
     .general-2, .general-3 {
+        /* Oculta los elementos */
         display: none;
     }
     .blog {
+        /* Padding */
         padding: 30px;
     }
     .blog-content {
+        /* Flex-direction para columna */
         flex-direction: column;
     }
     .blog-1 {
+        /* Padding */
         padding: 0;
     }
     .footer {
+        /* Padding */
         padding: 30px;
     }
     .footer-content {
+        /* Flex-direction para columna */
         flex-direction: column;
+        /* Alinea texto horizontalmente */
         text-align: center;
     }
 }

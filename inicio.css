@@ -1,24 +1,36 @@
 /* Estilos generales para todos los elementos */
 * {
-    /* Eliminar márgenes y paddings por defecto */
+    /* Eliminar márgenes y paddings por defecto 
+       - box-sizing: border-box; incluye padding y borde en el ancho y alto del elemento */
     box-sizing: border-box;
+    /* Eliminar márgenes por defecto 
+       - margin: 0; establece el espacio exterior del elemento en 0 */
     margin: 0;
+    /* Eliminar paddings por defecto 
+       - padding: 0; establece el espacio interior del elemento en 0 */
     padding: 0;
     
-    /* Establecer fuente por defecto */
+    /* Establecer fuente por defecto 
+       - font-family: especifica la familia de fuentes para el texto */
     font-family: "Poppins", sans-serif;
 }
 
 /* Estilos para el cuerpo del documento */
 body {
-    /* Establecer ancho y alto mínimo */
+    /* Establecer ancho y alto mínimo 
+    - width: 100%; establece el ancho del cuerpo en 100% del viewport
+       - min-height: 100vh; establece la altura mínima del cuerpo en 100% del viewport */
     width: 100%;
     min-height: 100vh;
     
-    /* Establecer fondo degradado */
+    /* Establecer fondo degradado 
+       - background: linear-gradient(); crea un degradado de colores en el fondo */
     background: linear-gradient(90deg, #FF1493 0%, #4B0082 100%);
     
-    /* Centrar contenido horizontal y verticalmente */
+    /* Centrar contenido horizontal y verticalmente 
+    - display: flex; convierte el elemento en un contenedor flexible
+    - justify-content: center; centra el contenido horizontalmente
+       - align-items: center; centra el contenido verticalmente */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,143 +38,185 @@ body {
 
 /* Estilos para el contenedor principal del formulario */
 .container {
-    /* Establecer color de fondo y bordes redondeados */
+    /* Establecer color de fondo y bordes redondeados 
+    - background-color: establece el color de fondo del contenedor
+       - border-radius: establece la curvatura de los bordes */
     background-color: #DCDCDC;
     border-radius: 10px;
     
-    /* Agregar sombra para dar profundidad */
+    /* Agregar sombra para dar profundidad 
+       - box-shadow: agrega una sombra alrededor del contenedor */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     
-    /* Establecer ancho máximo y mínimo */
+    /* Establecer ancho máximo y mínimo 
+    - width: establece el ancho del contenedor
+       - max-width: establece el ancho máximo del contenedor */
     width: 400px;
     max-width: 100%;
     
-    /* Ocultar contenido que sobrepase el ancho máximo */
+    /* Ocultar contenido que sobrepase el ancho máximo 
+       - overflow: hidden; oculta el contenido que sobrepasa el ancho máximo */
     overflow: hidden;
 }
 
 /* Estilos para la cabecera del formulario */
 .header {
-    /* Establecer color de fondo */
+    /* Establecer color de fondo 
+       - background-color: establece el color de fondo del header */
     background-color: #eee;
     
-    /* Agregar padding para separar contenido */
+    /* Agregar padding para separar contenido 
+       - padding: establece el espacio interior del header */
     padding: 20px;
 }
 
 /* Estilos para el formulario */
 .form {
-    /* Agregar padding para separar contenido */
+    /* Agregar padding para separar contenido 
+       - padding: establece el espacio interior del formulario */
     padding: 20px;
 }
 
 /* Estilos para los campos de control del formulario */
 .form-control {
-    /* Agregar margen inferior para separar campos */
+    /* Agregar margen inferior para separar campos 
+       - margin-bottom: establece el espacio exterior inferior del campo */
     margin-bottom: 10px;
     padding-bottom: 20px;
     
-    /* Establecer posición relativa para iconos y mensajes de error */
+    /* Establecer posición relativa para iconos y mensajes de error 
+       - position: relative; establece la posición relativa del campo */
     position: relative;
 }
 
 /* Estilos para las etiquetas de los campos de control */
 .form-control label {
-    /* Mostrar etiqueta como bloque */
+    /* Mostrar etiqueta como bloque 
+       - display: inline-block; muestra la etiqueta como un bloque en línea */
     display: inline-block;
     
-    /* Agregar margen inferior para separar etiqueta del campo */
+    /* Agregar margen inferior para separar etiqueta del campo 
+       - margin-bottom: establece el espacio exterior inferior de la etiqueta */
     margin-bottom: 5px;
 }
 
 /* Estilos para los campos de entrada del formulario */
 .form-control input {
-    /* Establecer bordes y color de fondo */
+    /* Establecer bordes y color de fondo 
+    - border: establece el borde del campo
+       - background-color: establece el color de fondo del campo */
     border: 2px solid #FF1493;
     background-color: #fff;
     
-    /* Establecer tamaño de fuente y padding */
+    /* Establecer tamaño de fuente y padding 
+    - font-size: establece el tamaño de la fuente
+       - padding: establece el espacio interior del campo */
     font-size: 14px;
     padding: 10px;
     
-    /* Ocupar todo el ancho disponible */
+    /* Ocupar todo el ancho disponible 
+       - width: establece el ancho del campo */
     width: 100%;
     
-    /* Establecer bordes redondeados */
+    /* Establecer bordes redondeados 
+       - border-radius: establece la curvatura de los bordes */
     border-radius: 10px;
 }
 
 /* Estilos para los iconos de éxito y error */
 .form-control i {
-    /* Establecer posición absoluta para colocar iconos al lado del campo */
+    /* Establecer posición absoluta para colocar iconos al lado del campo 
+        -position: absolute; establece la posición absoluta del icono
+    - top: establece la posición vertical del icono
+       - right: establece la posición horizontal del icono */
     position: absolute;
     top: 45px;
     right: 10px;
     
-    /* Ocultar iconos por defecto */
+    /* Ocultar iconos por defecto 
+       - visibility: hidden; oculta el icono */
     visibility: hidden;
 }
 
 /* Estilos para los mensajes de error */
 .form-control small {
-    /* Establecer posición absoluta para colocar mensaje debajo del campo */
+    /* Establecer posición absoluta para colocar mensaje debajo del campo 
+    - position: absolute; establece la posición absoluta del mensaje
+    - bottom: establece la posición vertical del mensaje
+       - left: establece la posición horizontal del mensaje */
     position: absolute;
     bottom: 0;
     left: 0;
     
-    /* Ocultar mensajes por defecto */
+    /* Ocultar mensajes por defecto 
+       - visibility: hidden; oculta el mensaje */
     visibility: hidden;
 }
 
 /* Estilos para el botón de envío */
 .form button {
-    /* Establecer color de fondo y bordes */
+    /* Establecer color de fondo y bordes 
+    - background-color: establece el color de fondo del botón
+       - border: establece el borde del botón */
     background-color: #FF1493;
     border: 2px solid #4B0082;
     
-    /* Establecer color de texto y tamaño de fuente */
+    /* Establecer color de texto y tamaño de fuente 
+    - color: establece el color del texto
+       - font-size: establece el tamaño de la fuente */
     color: #fff;
     font-size: 14px;
     
-    /* Ocupar todo el ancho disponible */
+    /* Ocupar todo el ancho disponible 
+       - width: establece el ancho del botón */
     width: 100%;
     
-    /* Establecer bordes redondeados */
+    /* Establecer bordes redondeados 
+       - border-radius: establece la curvatura de los bordes */
     border-radius: 10px;
     
-    /* Agregar padding para separar contenido */
+    /* Agregar padding para separar contenido 
+       - padding: establece el espacio interior del botón */
     padding: 10px;
 }
 
 /* Estilos para los campos de control con éxito */
 .form-control.success input {
-    /* Cambiar color de borde para indicar éxito */
+    /* Cambiar color de borde para indicar éxito 
+       - border-color: establece el color del borde */
     border-color: #4B0082;
 }
 
 /* Estilos para los campos de control con error */
 .form-control.error input {
-    /* Cambiar color de borde para indicar error */
+    /* Cambiar color de borde para indicar error 
+       - border-color: establece el color del borde */
     border-color: #FF1493;
 }
 
 /* Estilos para los iconos de éxito visibles */
 .form-control.success i.fa-check-circle {
-    /* Mostrar icono de éxito */
-    color: #FF1493;
+    /* Mostrar icono de éxito 
+    - color: establece el color del icono
+       - visibility: visible; muestra el icono */
+    color: #4B0082;
     visibility: visible;
 }
 
 /* Estilos para los iconos de error visibles */
 .form-control.error i.fa-exclamation-circle {
-    /* Mostrar icono de error */
+    /* Mostrar icono de error 
+    - color: establece el color del icono
+       - visibility: visible; muestra el icono */
     color: #FF1493;
     visibility: visible;
 }
 
 /* Estilos para los mensajes de error visibles */
 .form-control.error small {
-    /* Mostrar mensaje de error */
+    /* Mostrar mensaje de error 
+    - visibility: visible; muestra el mensaje
+       - color: establece el color del mensaje */
     visibility: visible;
     color: #FF1493;
 }

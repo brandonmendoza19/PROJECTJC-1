@@ -1,141 +1,190 @@
+<!-- Declaración del documento HTML5 -->
 <!DOCTYPE html>
+<!-- Establece el idioma del documento -->
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>Tienda GeoArt V</title>
-		<link rel="stylesheet" href="productos.css" />
-	</head>
-	<body>
-		<header>
-			<h1>Tienda</h1>
+<!-- Contenedor de metadatos y enlaces a recursos externos -->
+<head>
+    <!-- Codificación de caracteres utilizada en el documento -->
+    <meta charset="UTF-8" />
+    <!--Compatibilidad con Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Configuración de la viewport para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título de la página -->
+    <title>Tienda GeoArt V</title>
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="productos.css" />
+</head>
+<!-- Contenedor del contenido de la página -->
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+    <!-- Título principal de la página -->
+    <h1>Tienda</h1>
 
-			<div class="container-icon">
-				<div class="container-cart-icon">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 24 24"
-						stroke-width="1.5"
-						stroke="currentColor"
-						class="icon-cart"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-						/>
-					</svg>
-					<div class="count-products">
-						<span id="contador-productos">0</span>
-					</div>
-				</div>
+    <!-- Contenedor del ícono de carrito -->
+    <div class="container-icon">
+        <!-- Contenedor del ícono de carrito y contador de productos -->
+        <div class="container-cart-icon">
+        <!-- Ícono de carrito utilizando SVG -->
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon-cart"
+        >
+            <!-- Ruta del ícono de carrito -->
+            <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+            />
+        </svg>
+        <!-- Contador de productos -->
+        <div class="count-products">
+            <!-- Etiqueta que muestra el número de productos en el carrito -->
+            <span id="contador-productos">0</span>
+        </div>
+        </div>
 
-				<div class="container-cart-products hidden-cart">
-					<div class="row-product hidden">
-						<div class="cart-product">
-							<div class="info-cart-product">
-								<span class="cantidad-producto-carrito">1</span>
-								<p class="titulo-producto-carrito">Recicla</p>
-								<span class="precio-producto-carrito">$80.000</span>
-							</div>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke-width="1.5"
-								stroke="currentColor"
-								class="icon-close"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									d="M6 18L18 6M6 6l12 12"
-								/>
-							</svg>
-						</div>
-					</div>
+        <!-- Contenedor de productos en el carrito -->
+        <div class="container-cart-products hidden-cart">
+        <!-- Fila de producto en el carrito -->
+        <div class="row-product hidden">
+            <!-- Información del producto en el carrito -->
+            <div class="cart-product">
+            <!-- Detalles del producto -->
+            <div class="info-cart-product">
+                <!-- Cantidad del producto -->
+                <span class="cantidad-producto-carrito">1</span>
+                <!-- Título del producto -->
+                <p class="titulo-producto-carrito">Recicla</p>
+                <!-- Precio del producto -->
+                <span class="precio-producto-carrito">$80.000</span>
+            </div>
+            <!-- Ícono de cierre -->
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="icon-close"
+            >
+                <!-- Ruta del ícono de cierre -->
+                <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+                />
+            </svg>
+            </div>
+        </div>
 
-					<div class="cart-total hidden">
-						<h3>Total:</h3>
-						<span class="total-pagar">$80.000</span>
-					</div>
-					<p class="cart-empty">El carrito está vacío</p>
-				</div>
-			</div>
-		</header>
+        <!-- Total del carrito -->
+        <div class="cart-total hidden">
+            <!-- Título del total -->
+            <h3>Total:</h3>
+            <!-- Monto total -->
+            <span class="total-pagar">$80.000</span>
+        </div>
+        <!-- Mensaje cuando el carrito está vacío -->
+        <p class="cart-empty">El carrito está vacío</p>
+        </div>
+    </div>
+    </header>
+        <!-- Contenedor de items de producto -->
 		<div class="container-items">
+			<!-- Item de producto -->
 			<div class="item">
-				<figure>
-					<img
-						src="images/img-1- (5).jfif"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Flores de periódico</h2>
-					<p class="price">$9.900</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
+			<!-- Figura del producto -->
+			<figure>
+				<!-- Imagen del producto -->
+				<img src="images/img-1- (5).jfif" alt="producto" />
+			</figure>
+			<!-- Información del producto -->
+			<div class="info-product">
+				<!-- Título del producto -->
+				<h2>Flores de periódico</h2>
+				<!-- Precio del producto -->
+				<p class="price">$9.900</p>
+				<!-- Botón para agregar al carrito -->
+				<button class="btn-add-cart">Añadir al carrito</button>
 			</div>
-			<div class="item">
-				<figure>
-					<img
-						src="images/img-3.jfif"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>maquetas</h2>
-					<p class="price">$19.900</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
 			</div>
+			<!-- Item de producto -->
 			<div class="item">
-				<figure>
-					<img
-						src="images/img-1- (6).jfif"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Maceta</h2>
-					<p class="price">$9.900</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
+			<!-- Figura del producto -->
+			<figure>
+				<!-- Imagen del producto -->
+				<img src="images/img-3.jfif" alt="producto" />
+			</figure>
+			<!-- Información del producto -->
+			<div class="info-product">
+				<!-- Título del producto -->
+				<h2>maquetas</h2>
+				<!-- Precio del producto -->
+				<p class="price">$19.900</p>
+				<!-- Botón para agregar al carrito -->
+				<button class="btn-add-cart">Añadir al carrito</button>
 			</div>
-			<div class="item">
-				<figure>
-					<img
-						src="images/img-1- (11).jfif"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Arte povera</h2>
-					<p class="price">$19.900</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
 			</div>
+			<!-- Item de producto -->
 			<div class="item">
-				<figure>
-					<img
-						src="images/img-1- (7).jfif"
-						alt="producto"
-					/>
-				</figure>
-				<div class="info-product">
-					<h2>Papel maché</h2>
-					<p class="price">$9.900</p>
-					<button class="btn-add-cart">Añadir al carrito</button>
-				</div>
+			<!-- Figura del producto -->
+			<figure>
+				<!-- Imagen del producto -->
+				<img src="images/img-1- (6).jfif" alt="producto" />
+			</figure>
+			<!-- Información del producto -->
+			<div class="info-product">
+				<!-- Título del producto -->
+				<h2>Maceta</h2>
+				<!-- Precio del producto -->
+				<p class="price">$9.900</p>
+				<!-- Botón para agregar al carrito -->
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+			</div>
+			<!-- Item de producto -->
+			<div class="item">
+			<!-- Figura del producto -->
+			<figure>
+				<!-- Imagen del producto -->
+				<img src="images/img-1- (11).jfif" alt="producto" />
+			</figure>
+			<!-- Información del producto -->
+			<div class="info-product">
+				<!-- Título del producto -->
+				<h2>Arte povera</h2>
+				<!-- Precio del producto -->
+				<p class="price">$19.900</p>
+				<!-- Botón para agregar al carrito -->
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+			</div>
+			<!-- Item de producto -->
+			<div class="item">
+			<!-- Figura del producto -->
+			<figure>
+				<!-- Imagen del producto -->
+				<img src="images/img-1- (7).jfif" alt="producto" />
+			</figure>
+			<!-- Información del producto -->
+			<div class="info-product">
+				<!-- Título del producto -->
+				<h2>Papel maché</h2>
+				<!-- Precio del producto -->
+				<p class="price">$9.900</p>
+				<!-- Botón para agregar al carrito -->
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
 			</div>
 		</div>
-
+	
+		<!-- Enlace a archivo JavaScript -->
 		<script src="productos.js"></script>
-	</body>
-</html>
+		</body>
+	</html>

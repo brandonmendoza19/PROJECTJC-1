@@ -4,99 +4,99 @@
 /* Estilos generales para todos los elementos */
 * {
     /* Eliminar márgenes y paddings por defecto */
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Establece el margen exterior en 0 */
+    padding: 0; /* Establece el relleno interior en 0 */
     
     /* Establecer caja de contenido como referencia para cálculos */
-    box-sizing: border-box;
+    box-sizing: border-box; /* Incluye padding y borde en cálculo de ancho */
     
     /* Establecer fuente por defecto */
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif; /* Define la fuente Open Sans como predeterminada */
 }
 
 /* Estilos para el contenedor principal del formulario */
 .container-form {
     /* Establecer ancho máximo y centrar horizontalmente */
-    width: 100%;
-    max-width: 90%;
-    margin: 0 auto;
+    width: 100%; /* Establece el ancho en 100% del contenedor padre */
+    max-width: 90%; /* Establece el ancho máximo en 90% del contenedor padre */
+    margin: 0 auto; /* Centra horizontalmente el contenedor */
     
     /* Establecer alineación vertical y envoltura de contenido */
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    display: flex; /* Establece el contenedor como flexible */
+    align-items: flex-start; /* Alinea elementos verticalmente al inicio */
+    flex-wrap: wrap; /* Permite envolver elementos en varias líneas */
     
     /* Agregar padding superior e inferior */
-    padding: 40px 0;
+    padding: 40px 0; /* Establece relleno superior e inferior en 40px */
 }
 
 /* Estilos para los párrafos dentro del contenedor principal */
 .container-form p {
     /* Establecer tamaño de fuente y interlineado */
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 16px; /* Establece el tamaño de fuente en 16px */
+    line-height: 1.6; /* Establece la altura de línea en 1.6 veces el tamaño de fuente */
     
     /* Agregar margen inferior */
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Establece el margen inferior en 20px */
 }
 
 /* Estilos para los enlaces dentro del contenedor principal */
 .container-form a {
     /* Establecer tamaño de fuente y estilo de enlace */
-    font-size: 16px;
-    display: inline-block;
-    text-decoration: none;
+    font-size: 16px; /* Establece el tamaño de fuente en 16px */
+    display: inline-block; /* Establece el enlace como bloque en línea */
+    text-decoration: none; /* Elimina subrayado del enlace */
     
     /* Establecer ancho y margen inferior */
-    width: 100%;
-    margin-bottom: 15px;
+    width: 100%; /* Establece el ancho en 100% del contenedor padre */
+    margin-bottom: 15px; /* Establece el margen inferior en 15px */
     
     /* Establecer color y transición de color */
-    color: orangered;
-    transition: color 0.2s ease-in-out; 
+    color: orangered; /* Establece el color del texto en naranja */
+    transition: color 0.2s ease-in-out; /* Establece transición de color en 0.2 segundos */
 }
 
 /* Estilos para los enlaces en estado hover */
 .container-form a:hover {
     /* Cambiar color en estado hover */
-    color: darkorange; 
+    color: darkorange; /* Establece el color del texto en naranja oscuro en estado hover */
 }
 
 /* Estilos para los iconos dentro de los enlaces */
 .container-form a i {
     /* Agregar margen derecho */
-    margin-right: 10px;
+    margin-right: 10px; /* Establece el margen derecho en 10px */
 }
 
 /* Estilos para la imagen de fondo */
 .orange-img {
     /* Establecer ancho y alto automáticos */
-    width: 100%;
-    height: auto; 
+    width: 100%; /* Establece el ancho en 100% del contenedor padre */
+    height: auto; /* Establece el alto automáticamente */
     
     /* Establecer posición relativa */
-    position: relative;
+    position: relative; /* Establece la posición relativa para posicionar elementos */
 }
 
 /* Estilos para la imagen dentro de la imagen de fondo */
 .orange-img img {
     /* Establecer ancho y alto automáticos */
-    width: 100%; 
-    height: auto; 
+    width: 100%; /* Establece el ancho en 100% del contenedor padre */
+    height: auto; /* Establece el alto automáticamente */
 }
 
 /* Media query para dispositivos con ancho máximo de 768px (tabletas y móviles) */
 @media (max-width: 768px) {
     /* Cambiar alineación y envoltura de contenido en el contenedor principal */
     .container-form {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px 0; 
+        flex-direction: column; /* Establece la dirección de los elementos en columna */
+        text-align: center; /* Alinea texto en el centro */
+        padding: 20px 0; /* Establece relleno superior e inferior en 20px */
     }
     
     /* Reducir tamaño de fuente en párrafos y enlaces */
     .container-form p, .container-form a {
-        font-size: 14px;
+        font-size: 14px; /* Establece el tamaño de fuente en 14px */
     }
 }
 
@@ -104,13 +104,13 @@
 @media (max-width: 576px) {
     /* Reducir ancho máximo y padding en el contenedor principal */
     .container-form {
-        max-width: 90%;
-        padding: 20px 0;
+        max-width: 90%; /* Establece el ancho máximo en 90% del contenedor padre */
+        padding: 20px 0; /* Establece relleno superior e inferior en 20px */
     }
     
     /* Reducir tamaño de fuente en párrafos y enlaces */
     .container-form p, .container-form a {
-        font-size: 12px;
-        margin-top: 10px;
+        font-size: 12px; /* Establece el tamaño de fuente en 12px */
+        margin-top: 10px; /* Establece el margen superior en 10px */
     }
 }

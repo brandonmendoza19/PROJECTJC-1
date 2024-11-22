@@ -1,12 +1,15 @@
 /* Estilos generales para eliminar márgenes y paddings por defecto y establecer caja de contenido como referencia */
 * {
+    /* Elimina paddings y márgenes por defecto */
     padding: 0;
     margin: 0;
+    /* Establece la caja de contenido como referencia para calcular ancho y alto */
     box-sizing: border-box;
 }
 
 /* Establece la fuente utilizada en el cuerpo del documento */
 body {
+    /* Fuente principal utilizada en el documento */
     font-family: 'Poppins', sans-serif;
 }
 
@@ -14,65 +17,65 @@ body {
 .container {
     /* Establece una imagen de fondo con degradado */
     background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.6)), url("images/img-1-\ (12\).jfif");
-    /* Centra la imagen de fondo */
+    /* Centra la imagen de fondo horizontal y verticalmente */
     background-position: center;
-    /* Ajusta el tamaño de la imagen de fondo */
+    /* Ajusta el tamaño de la imagen de fondo para cubrir todo el contenedor */
     background-size: cover;
-    /* Establece la altura del contenedor */
+    /* Establece la altura del contenedor igual a la altura de la ventana */
     height: 100vh;
-    /* Establece la visualización en flexbox */
+    /* Establece la visualización en flexbox para distribuir elementos */
     display: flex;
-    /* Establece la dirección de los elementos en flexbox */
+    /* Establece la dirección de los elementos en flexbox (columna) */
     flex-direction: column;
-    /* Centra los elementos horizontalmente */
+    /* Centra los elementos horizontalmente en el contenedor */
     align-items: center;
-    /* Centra los elementos verticalmente */
+    /* Centra los elementos verticalmente en el contenedor */
     justify-content: center;
 }
 
 /* Estilos para la caja que contiene el logo */
 .box {
-    /* Establece el color de fondo */
+    /* Establece el color de fondo de la caja */
     background-color: rgba(0, 0, 0, 0.726);
-    /* Establece el ancho */
+    /* Establece el ancho de la caja igual al ancho del contenedor */
     width: 100%;
-    /* Establece el ancho máximo */
+    /* Establece el ancho máximo de la caja */
     max-width: 800px;
-    /* Agrega espacio interior */
+    /* Agrega espacio interior en la caja */
     padding: 20px;
-    /* Centra el texto */
+    /* Centra el texto en la caja */
     text-align: center;
 }
 
 /* Estilos para la imagen del logo */
 img {
-    /* Establece el ancho */
+    /* Establece el ancho de la imagen igual al ancho de la caja */
     width: 100%;
-    /* Establece el ancho máximo */
-    max-width: 300px; 
+    /* Establece el ancho máximo de la imagen */
+    max-width: 300px;
 }
 
 /* Estilos para el contenido principal */
 .main {
-    /* Centra el texto */
+    /* Centra el texto en el contenido principal */
     text-align: center;
-    /* Establece el color del texto */
+    /* Establece el color del texto en el contenido principal */
     color: #e3cdb6;
-    /* Establece el color de fondo */
+    /* Establece el color de fondo del contenido principal */
     background-color: rgba(0, 0, 0, 0.596);
-    /* Agrega bordes redondeados */
+    /* Agrega bordes redondeados al contenido principal */
     border-radius: 10px;
-    /* Agrega espacio interior */
+    /* Agrega espacio interior en el contenido principal */
     padding: 20px;
-    /* Establece el ancho */
+    /* Establece el ancho del contenido principal */
     width: 90%;
-    /* Establece el ancho máximo */
-    max-width: 700px; 
+    /* Establece el ancho máximo del contenido principal */
+    max-width: 700px;
 }
 
 /* Estilos para la navegación */
 .navbar {
-    /* Agrega margen superior */
+    /* Agrega margen superior a la navegación */
     margin-top: 20px;
 }
 
@@ -86,27 +89,27 @@ img {
 
 /* Estilos para los elementos de la lista de navegación */
 .navbar li {
-    /* Establece la visualización en línea */
+    /* Establece la visualización en línea para los elementos de la lista */
     display: inline;
-    /* Agrega margen derecho */
+    /* Agrega margen derecho a los elementos de la lista */
     margin-right: 20px;
 }
 
 /* Estilos para los enlaces de navegación */
 .navbar a {
-    /* Elimina subrayado por defecto */
+    /* Elimina subrayado por defecto en los enlaces */
     text-decoration: none;
-    /* Establece el color del texto */
+    /* Establece el color del texto en los enlaces */
     color: #e3cdb6;
-    /* Establece el tamaño de fuente */
+    /* Establece el tamaño de fuente en los enlaces */
     font-size: 15px;
-    /* Establece el peso de fuente */
+    /* Establece el peso de fuente en los enlaces */
     font-weight: 600;
 }
 
 /* Estilos para los enlaces de navegación al pasar el mouse */
 .navbar a:hover {
-    /* Establece el color del texto al pasar el mouse */
+    /* Establece el color del texto al pasar el mouse sobre los enlaces */
     color: #FFA500;
 }
 

@@ -1,103 +1,173 @@
-<!-- Definición del documento HTML y su idioma -->
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <!-- Codificación de caracteres y compatibilidad con dispositivos móviles -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <!-- Enlace a la hoja de estilos CSS -->
-    <link rel="stylesheet" href="inicio.css" />
-    
-    <!-- Preconexión con Google Fonts para cargar fuentes de manera eficiente -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
-    <!-- Enlace a la fuente Poppins desde Google Fonts -->
-    <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
-    rel="stylesheet"
-    />
-    
-    <!-- Título de la página -->
-    <title>Registro GeoArt V</title>
-</head>
-
-<!-- Cuerpo del documento HTML -->
-<body>
-    <!-- Contenedor principal del formulario de registro -->
-    <div class="container">
-        <!-- Cabecera del formulario -->
-        <div class="header">
-            <!-- Título del formulario -->
-            <h2>Registro</h2>
-        </div>
+<!-- Definición del documento HTML y su idioma 
+    - ¡DOCTYPE html!: declara el documento como HTML5
+    - lang="es": especifica el idioma del contenido como español -->
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <!-- Codificación de caracteres y compatibilidad con dispositivos móviles 
+            - charset="UTF-8": establece la codificación de caracteres en UTF-8
+            - http-equiv="X-UA-Compatible": especifica la compatibilidad con Internet Explorer
+            - viewport: controla el zoom y el ancho de la página en dispositivos móviles -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
-        <!-- Formulario de registro -->
-        <form id="form" class="form">
-            <!-- Campo de control para el nombre de usuario -->
-            <div class="form-control">
-                <label for="username">Nombre del usuário</label>
-                <input
-                    type="text"
-                    id="username"
-                    placeholder="Digite su nombre de usuario..."
-                />
-                <!-- Iconos para indicar error o éxito -->
-                <i class="fas fa-exclamation-circle"></i>
-                <i class="fas fa-check-circle"></i>
-                <!-- Mensaje de error -->
-                <small>Mensaje de error</small>
+        <!-- Enlace a la hoja de estilos CSS 
+            - rel="stylesheet": especifica la relación del enlace como hoja de estilos
+            - href="inicio.css": enlaza al archivo CSS "inicio.css" -->
+        <link rel="stylesheet" href="inicio.css" />
+        
+        <!-- Preconexión con Google Fonts para cargar fuentes de manera eficiente 
+        - rel="preconnect": establece una conexión previa con el servidor
+            - href="https://fonts.googleapis.com": enlaza al servidor de Google Fonts
+            - crossorigin: permite la carga de recursos desde otro origen -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        
+        <!-- Enlace a la fuente Poppins desde Google Fonts 
+            - href: enlaza al recurso de la fuente Poppins
+            - rel="stylesheet": especifica la relación del enlace como hoja de estilos -->
+        <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet"
+        />
+        
+        <!-- Título de la página 
+            - title: especifica el título de la página -->
+        <title>Registro GeoArt V</title>
+    </head>
+    
+    <!-- Cuerpo del documento HTML 
+            - body: contiene el contenido de la página -->
+    <body>
+        <!-- Contenedor principal del formulario de registro 
+            - class="container": aplica estilos del CSS a través de la clase "container" -->
+        <div class="container">
+            <!-- Cabecera del formulario 
+                - class="header": aplica estilos del CSS a través de la clase "header" -->
+            <div class="header">
+                <!-- Título del formulario 
+                    - h2: especifica el título como encabezado de nivel 2 -->
+                <h2>Registro</h2>
             </div>
             
-            <!-- Campo de control para el email -->
+            <!-- Formulario de registro 
+                - id="form": identifica el formulario con el ID "form"
+                - class="form": aplica estilos del CSS a través de la clase "form" -->
+            <form id="form" class="form">
+                <!-- Campo de control para el nombre de usuario 
+                    - class="form-control": aplica estilos del CSS a través de la clase "form-control" -->
+                <div class="form-control">
+                    <!-- Etiqueta para el campo de texto 
+                        - for="username": relaciona la etiqueta con el campo de texto -->
+                    <label for="username">Nombre del usuário</label>
+                    <!-- Campo de texto para el nombre de usuario 
+                        - type="text": especifica el tipo de campo como texto
+                        - id="username": identifica el campo con el ID "username"
+                        - placeholder: especifica el texto de placeholder -->
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Digite su nombre de usuario..."
+                    />
+                    <!-- Iconos para indicar error o éxito 
+                        - class="fas fa-exclamation-circle": aplica el icono de error
+                        - class="fas fa-check-circle": aplica el icono de éxito -->
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="fas fa-check-circle"></i>
+                    <!-- Mensaje de error 
+                        - small: especifica el texto como pequeño -->
+                    <small>Mensaje de error</small>
+                </div>
+                
+                            <!-- Campo de control para el email 
+            - class="form-control": aplica estilos del CSS a través de la clase "form-control" -->
             <div class="form-control">
+                <!-- Etiqueta para el campo de texto 
+                - for="email": relaciona la etiqueta con el campo de texto -->
                 <label for="email">Email</label>
+                <!-- Campo de texto para el email 
+                - type="text": especifica el tipo de campo como texto
+                - id="email": identifica el campo con el ID "email"
+                - placeholder: especifica el texto de placeholder -->
                 <input type="text" id="email" placeholder="Digite su email.." />
+                <!-- Iconos para indicar error o éxito 
+                - class="fas fa-exclamation-circle": aplica el icono de error
+                - class="fas fa-check-circle": aplica el icono de éxito -->
                 <i class="fas fa-exclamation-circle"></i>
                 <i class="fas fa-check-circle"></i>
+                <!-- Mensaje de error 
+                - small: especifica el texto como pequeño -->
                 <small>Mensaje de error</small>
             </div>
             
-            <!-- Campo de control para la contraseña -->
+            <!-- Campo de control para la contraseña 
+            - class="form-control": aplica estilos del CSS a través de la clase "form-control" -->
             <div class="form-control">
+                <!-- Etiqueta para el campo de texto 
+                - for="password": relaciona la etiqueta con el campo de texto -->
                 <label for="password">Digite contraseña</label>
+                <!-- Campo de texto para la contraseña 
+                - type="password": especifica el tipo de campo como contraseña
+                - id="password": identifica el campo con el ID "password"
+                - placeholder: especifica el texto de placeholder -->
                 <input
                     type="password"
                     id="password"
                     placeholder="Digite su contraseña..."
                 />
+                <!-- Iconos para indicar error o éxito 
+                - class="fas fa-exclamation-circle": aplica el icono de error
+                - class="fas fa-check-circle": aplica el icono de éxito -->
                 <i class="fas fa-exclamation-circle"></i>
                 <i class="fas fa-check-circle"></i>
+                <!-- Mensaje de error 
+                - small: especifica el texto como pequeño -->
                 <small>Mensaje de error</small>
             </div>
             
-            <!-- Campo de control para la confirmación de contraseña -->
+            <!-- Campo de control para la confirmación de contraseña 
+            - class="form-control": aplica estilos del CSS a través de la clase "form-control" -->
             <div class="form-control">
+                <!-- Etiqueta para el campo de texto 
+                - for="password-confirmation": relaciona la etiqueta con el campo de texto -->
                 <label for="password-confirmation">Confirmacion de contraseña</label>
+                <!-- Campo de texto para la confirmación de contraseña 
+                - type="password": especifica el tipo de campo como contraseña
+                - id="password-confirmation": identifica el campo con el ID "password-confirmation"
+                - placeholder: especifica el texto de placeholder -->
                 <input
                     type="password"
                     id="password-confirmation"
                     placeholder="Digite su contraseña nuevamente..."
                 />
+                <!-- Iconos para indicar error o éxito 
+                - class="fas fa-exclamation-circle": aplica el icono de error
+                - class="fas fa-check-circle": aplica el icono de éxito -->
                 <i class="fas fa-exclamation-circle"></i>
                 <i class="fas fa-check-circle"></i>
+                <!-- Mensaje de error 
+                - small: especifica el texto como pequeño -->
                 <small>Mensaje de error</small>
             </div>
             
-            <!-- Botón de envío -->
+            <!-- Botón de envío 
+            - type="submit": especifica el tipo de botón como envío
+            - Botón de envío del formulario -->
             <button type="submit">Enviar</button>
         </form>
     </div>
     
-    <!-- Script para cargar Font Awesome -->
+    <!-- Script para cargar Font Awesome 
+    - src: especifica la URL del script
+    - crossorigin: permite la carga de recursos desde otro origen -->
     <script
     src="https://kit.fontawesome.com/f9e19193d6.js"
     crossorigin="anonymous"
     ></script>
     
-    <!-- Script para el formulario de registro -->
+    <!-- Script para el formulario de registro 
+    - src: especifica la URL del script -->
     <script src="inicio.js"></script>
 </body>
 </html>
